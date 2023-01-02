@@ -1,9 +1,19 @@
-.menu-wrapper {
+.MenuWrapper {
     @keyframes slideIn {
-        from {left: -15rem;}
+        from {left: -56rem;}
         to {left: 0rem;}
     }
     animation-name: slideIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+.MenuWrapperOut {
+    @keyframes slideOut {
+        from {left: 0rem;}
+        to {left: -56rem;}
+    }
+    animation-name: slideOut;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
 }

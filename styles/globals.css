@@ -25,7 +25,7 @@ body {
 
 h1 {
   font-family: 'Raleway';
-  font-size: xxx-large;
+  font-size: 3rem;
   font-variation-settings: "wght" 750;
 }
 
@@ -39,6 +39,11 @@ h3 {
   font-family: 'Raleway';
   font-size: large;
   font-variation-settings: "wght" 500;
+}
+
+sub {
+  font-size: small;
+  font-variation-settings: "wght" 100;
 }
 
 /* Lists & Paragraphs */

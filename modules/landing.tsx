@@ -19,17 +19,48 @@ import Title from "../components/elements/Title";
 import WorkCard from "../components/elements/cards/WorkCard";
 import LinksDiv from "../components/layout/LinksDiv";
 import ProjectCard from "../components/elements/cards/ProjectCard";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Ext from "../components/elements/Ext";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
-    
+
     useEffect(() => {
-        ;
+        // -25 to -200
+        // relearn: https://greensock.com/docs/v3/Plugins/ScrollTrigger
+        // don't forget to import from gsap/dist/x
+        gsap.fromTo("#introduction", 
+            {y: 0}, 
+            {
+                scrollTrigger: {
+                    trigger: "#experiences",
+                    start: "top bottom",
+                    end: "top top",
+                    toggleActions: "restart pause reverse pause",
+                    scrub: true,
+                }, 
+                y: 250, 
+                ease: "out"
+            }
+        )
     }, []);
 
     return(
         <main>
+            <div className="absolute -top-[8rem] right-[32rem]" id="bulb">
+                <Image 
+                    src="/lightbulb.svg"
+                    width={100}
+                    height={550}
+                    alt="hanging light bulb"
+                    className=" opacity-50"
+                />
+            </div>
+
             {/* Introduction */}
-            <div className="flex flex-col justify-center h-screen">
+            <div className="flex flex-col justify-center h-screen" id="introduction">
                 <div className="flex flex-row">
                     <div className="w-[75%]">
                         <h1 className="mb-0 text-blue-100" data-aos="fade-right"> Hi, I&apos;m Givarrel <span className=" text-fuchsia-400">Veivel P</span>attiwael! </h1>
@@ -54,7 +85,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div>
+            <div id="experiences">
                 <Title>// My Experiences</Title>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -72,10 +103,10 @@ const Landing = () => {
 
                         <LinksDiv>
                             <Link href="https://example.com">
-                                Website 🔗
+                                Website <Ext />
                             </Link>
                             <Link href="https://example.com">
-                                Repository 🔗
+                                Repository <Ext />
                             </Link>
                         </LinksDiv>
                     </WorkCard>
@@ -93,10 +124,10 @@ const Landing = () => {
 
                         <LinksDiv>
                             <Link href="https://betis.cs.ui.ac.id/">
-                                Website 🔗
+                                Website <Ext />
                             </Link>
                             <Link href="https://github.com/BETIS-2023/">
-                                Repositories 🔗
+                                Repositories <Ext />
                             </Link>
                         </LinksDiv>
                     </WorkCard>
@@ -119,9 +150,9 @@ const Landing = () => {
                     </ul>
 
                     <LinksDiv>
-                        <Link href="/">Deployment 🔗</Link>
-                        <Link href="https://github.com/veivel/monsieurrezan.com">Frontend Repo 🔗</Link>
-                        <Link href="https://github.com/veivel/monsieurrezan-backend">Backend Repo 🔗</Link>
+                        <Link href="/">Deployment <Ext /></Link>
+                        <Link href="https://github.com/veivel/monsieurrezan.com">Frontend Repo <Ext /></Link>
+                        <Link href="https://github.com/veivel/monsieurrezan-backend">Backend Repo <Ext /></Link>
                     </LinksDiv>
                 </ProjectCard>
             </div>
@@ -130,12 +161,11 @@ const Landing = () => {
                 <Title>// Education & Certifications</Title>
 
                 <h2>Computer Science Undergraduate @ Universitas Indonesia</h2>
-                <p>2021 - 2025 (expected)</p>
-                <p>Relevant coursework: Data Structures and Algorithms</p>
-
+                <sub>2021 - 2025 (expected)</sub>
+                <p>Relevant coursework: Data Structures and Algorithms, Linear Algebra</p>
+                <br />
                 <h2>Google Data Analytics Professional Certificate</h2>
-                <p>2022</p>
-                <Link href="/">credentials</Link>
+                <sub>2022 - <Link href="/">Credentials <Ext/> </Link></sub>
 
             </div>
 

@@ -14,7 +14,7 @@ type PROJECT_PROPS_TYPE = {
 
 export default function ProjectCard({ title, status, technologies, children, imgSrc }: PROJECT_PROPS_TYPE): JSX.Element {
     return(
-        <Card imgSrc={imgSrc}>
+        <Card imgSrc={imgSrc} orientation="left">
             <div className="flex flex-col justify-between">
                 <h2><Balancer>{title}</Balancer></h2>
                 <p className="text-sm">{status}</p>
