@@ -26,7 +26,7 @@ export default function Navbar(): JSX.Element {
 
 
     return(
-        <div className={`navbar fixed ${visible ? 'top-0' : ''} bg-neutral-100 text-black w-full py-4 px-8 grid grid-cols-2`}>
+        <div className={`Navbar fixed ${visible ? 'top-0' : ''} bg-neutral-100 text-black w-full py-4 px-8 grid grid-cols-2`}>
             <div className="flex flex-row bg-yellow-200">
                 <span>Branding</span>
             </div>

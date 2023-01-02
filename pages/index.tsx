@@ -3,9 +3,11 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import Landing from '../modules/landing'
-import Navbar from '../components/layout/navbar'
+import Navbar from '../components/layout/Navbar'
 import { useContext } from 'react'
 import { AppContext } from '../components/layout/context/AppProvider'
+import Hamburger from '../components/layout/Hamburger'
+import Drawer from '../components/layout/Drawer'
 
 export default function Home() {
 
@@ -19,6 +21,8 @@ export default function Home() {
             </Head>
 
             {/* <Navbar /> */}
+            <Hamburger />
+            <Drawer />
             <Landing />
         </>
     )

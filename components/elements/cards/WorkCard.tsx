@@ -6,18 +6,18 @@ import Card from "./Card";
 
 type PROJECT_PROPS_TYPE = {
     title: string
-    status: string
+    period: string
     technologies: string[]
     children: any
     imgSrc: string
 }
 
-export default function ProjectCard({ title, status, technologies, children, imgSrc }: PROJECT_PROPS_TYPE): JSX.Element {
+export default function WorkCard({ title, period, technologies, children, imgSrc }: PROJECT_PROPS_TYPE): JSX.Element {
     return(
         <Card imgSrc={imgSrc}>
-            <div className="flex flex-col justify-between">
-                <h2><Balancer>{title}</Balancer></h2>
-                <p className="text-sm">{status}</p>
+            <div className="flex flex-row justify-between">
+                <h2 className="w-[70%]"><Balancer>{title}</Balancer></h2>
+                <p className="mt-2">{period}</p>
             </div>
             <div className="flex flex-row space-x-2 mb-6">
                 {technologies.map((item, idx) => (

@@ -15,8 +15,10 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from "swiper";
 import Balancer from "react-wrap-balancer";
 import Card from "../components/elements/cards/Card";
-import Title from "../components/elements/title";
-import ProjectCard, { LinksDiv } from "../components/elements/cards/ProjectCard";
+import Title from "../components/elements/Title";
+import WorkCard from "../components/elements/cards/WorkCard";
+import LinksDiv from "../components/layout/LinksDiv";
+import ProjectCard from "../components/elements/cards/ProjectCard";
 
 const Landing = () => {
     
@@ -27,23 +29,28 @@ const Landing = () => {
     return(
         <main>
             {/* Introduction */}
-            <div className="flex flex-row justify-between">
-                <div className="w-[75%]">
-                    <h1 className="mb-0 text-blue-100"> Hi, I&apos;m Givarrel <span className=" text-fuchsia-400">Veivel P</span>attiwael! </h1>
-                    <p className="text-base font-bold"> But you can call me <b>Veivel</b>. </p>
-                    <h2 className="mt-8">
-                        {/* <Balancer> */}
-                        I&apos;m a tech enthusiast, a life-long learner, and a guy on the endless journey of growth and discovery.
-                        {/* </Balancer> */}
-                    </h2>
+            <div className="flex flex-col justify-center h-screen">
+                <div className="flex flex-row">
+                    <div className="w-[75%]">
+                        <h1 className="mb-0 text-blue-100" data-aos="fade-right"> Hi, I&apos;m Givarrel <span className=" text-fuchsia-400">Veivel P</span>attiwael! </h1>
+                        <p className="text-base font-bold" data-aos="fade-right"> But you can call me <b>Veivel</b>. </p>
+                        <h2 className="mt-12" data-aos="fade-up">
+                            {/* <Balancer> */}
+                            I&apos;m a tech enthusiast, a life-long learner, and a guy on the endless journey of growth and discovery.
+                            {/* </Balancer> */}
+                        </h2>
+                    </div>
+                    <div className="w-[200px] h-[200px] relative" data-aos="flip-up">
+                        <Image 
+                            src="/thebirdthing.jpeg"
+                            fill
+                            alt="picture of me"
+                            className="rounded-full"
+                        />
+                    </div>
                 </div>
-                <div className="w-[200px] h-[200px] relative">
-                    <Image 
-                        src="/thebirdthing.jpeg"
-                        fill
-                        alt="picture of me"
-                        className="rounded-full"
-                    />
+                <div className="mt-12" data-aos="fade-up">
+                    <p>I do things.</p>
                 </div>
             </div>
 
@@ -51,36 +58,11 @@ const Landing = () => {
                 <Title>// My Experiences</Title>
 
                 <div className="grid grid-cols-2 gap-4">
-                    {/* <Card imgSrc="/thebirdthing.jpeg">
-                        <div className="flex flex-row justify-between">
-                            <h2 className="w-[70%]"><Balancer>Frontend Engineer Intern @ AdainAcara</Balancer></h2>
-                            <p className="mt-2">Nov 2022 - Present</p>
-                        </div>
-                        <div className="flex flex-row space-x-2 mb-6">
-                            <Icon size={45} iconId="nextjs" />
-                            <Icon size={45} iconId="tailwind" />
-                        </div>
-
-                        <ul>
-                            <li>Initiated the migration of the Bootstrap-powered prototype to a Figma-directed Tailwind design</li>
-                            <li>Took charge of onboarding peer interns onto the project.</li>
-                            <li>Responsible for the landing page, vendor registration, and more.</li>
-                        </ul>
-
-                        <div className="flex flex-row justify-start space-x-8 mt-6">
-                            <Link href="https://example.com">
-                                Website 🔗
-                            </Link>
-                            <Link href="https://example.com">
-                                Repository 🔗
-                            </Link>
-                        </div>
-                    </Card> */}
-                    <ProjectCard
+                    <WorkCard
                         title="Frontend Engineer Intern @ AdainAcara"
                         period="Dec 2022 - Present"
                         technologies={["nextjs", "tailwind"]}
-                        imgSrc="/thebirdthing.jpeg"
+                        imgSrc="/content/adainacara-1.jpeg"
                     >
                         <ul>
                             <li>Initiated the migration of the Bootstrap-powered prototype to a Figma-directed Tailwind design</li>
@@ -96,8 +78,8 @@ const Landing = () => {
                                 Repository 🔗
                             </Link>
                         </LinksDiv>
-                    </ProjectCard>
-                    <ProjectCard
+                    </WorkCard>
+                    <WorkCard
                         title="Web Developer @ BETIS Fasilkom UI"
                         period="Nov 2022 - Present"
                         technologies={["nextjs", "tailwind"]}
@@ -117,32 +99,35 @@ const Landing = () => {
                                 Repositories 🔗
                             </Link>
                         </LinksDiv>
-                    </ProjectCard>
+                    </WorkCard>
                 </div>
             </div>
 
             <div>
                 <Title>// Projects</Title>
-
-                <h2>Monsieur Rezan&apos;s Website</h2>
-                <p>Completed - 
-                    <Link href="/">Deployment</Link>
-                    <Link href="/">Frontend repo</Link>
-                    <Link href="/">Backend repo</Link>
-                </p>
-                <p>[NextJS] [Strapi] [Docker] [Tailwind]</p>
-                <div>
+                <ProjectCard
+                    title="Monsieur Rezan's Website"
+                    status="Completed"
+                    technologies={["nextjs", "tailwind"]}
+                    imgSrc="/thebirdthing.jpeg"
+                >
                     <p>Created a professional website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
                     <ul>
                         <li>Deployed Strapi for the client&apos;s CMS using Docker and Postgres.</li>
                         <li>Designed and built a responsive landing page and registration form with client requirements.</li>
                         <li>Utilized...</li>
                     </ul>
-                </div>
+
+                    <LinksDiv>
+                        <Link href="/">Deployment 🔗</Link>
+                        <Link href="https://github.com/veivel/monsieurrezan.com">Frontend Repo 🔗</Link>
+                        <Link href="https://github.com/veivel/monsieurrezan-backend">Backend Repo 🔗</Link>
+                    </LinksDiv>
+                </ProjectCard>
             </div>
 
             <div>
-                <h1 data-aos="fade-right">// Education & Certifications</h1>
+                <Title>// Education & Certifications</Title>
 
                 <h2>Computer Science Undergraduate @ Universitas Indonesia</h2>
                 <p>2021 - 2025 (expected)</p>
@@ -156,7 +141,7 @@ const Landing = () => {
 
             {/* this should be a tiny carousel, nothing else */}
             <div className="">
-                <h1>// Technologies I&apos;ve used</h1>
+                <Title>// Technologies I&apos;ve used</Title>
                 <Swiper
                     spaceBetween={20}
                     slidesPerView={5}
@@ -174,7 +159,7 @@ const Landing = () => {
             </div>
 
             <div>
-                <h1>// Miscellaneous (...)</h1>
+                <Title>// Miscellaneous (...)</Title>
 
                 <h2>Head of Job and Scholarship Fair</h2>
                 <p>EDUCARE</p>
@@ -189,7 +174,7 @@ const Landing = () => {
             </div>
 
             <div>
-                <h1>// Let&apos;s connect.</h1>
+                <Title>// Let&apos;s connect.</Title>
                 <Link href="https://www.instagram.com/veivelp/" target={"_blank"}> Instagram </Link>
                 <Link href="https://www.linkedin.com/in/veivel/" target={"_blank"}> LinkedIn </Link>
                 <Link href="https://github.com/veivel/" target={"_blank"}> GitHub </Link>

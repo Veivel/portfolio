@@ -7,7 +7,7 @@ type CARD_PROPS_TYPE = {
 
 export default function Card({ children, imgSrc }: CARD_PROPS_TYPE): JSX.Element {
     return(
-        <div className="rounded-xl bg-white text-black shadow-lg shadow-red-500">
+        <div className="rounded-xl bg-white text-black shadow-lg shadow-red-500" data-aos="fade-up">
             <div className="w-full h-[250px] relative">
                 <Image 
                     src={imgSrc}

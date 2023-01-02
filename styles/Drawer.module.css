@@ -1,0 +1,9 @@
+.menu-wrapper {
+    @keyframes slideIn {
+        from {left: -15rem;}
+        to {left: 0rem;}
+    }
+    animation-name: slideIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
