@@ -1,6 +1,6 @@
 export default function Miscellaneous() {
     return(
-        <div className="mx-auto">
+        <div className="mx-auto" data-aos="fade-up">
             <>
                 <h2>Head of Job and Scholarship Fair</h2>
                 <h4>EDUCARE, Sep 2022 - Present</h4>

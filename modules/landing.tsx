@@ -31,33 +31,33 @@ import Clipboard from "../components/elements/Clipboard";
 import LetsConnect from "../components/sections/LetsConnect";
 import Education from "../components/sections/Education";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
 
-    useEffect(() => {
-        // -25 to -200
-        // relearn: https://greensock.com/docs/v3/Plugins/ScrollTrigger
-        // don't forget to import from gsap/dist/x
-        gsap.fromTo("#bulb", 
-            {y: 0}, 
-            {
-                scrollTrigger: {
-                    trigger: "#experiences",
-                    start: "top bottom",
-                    end: "top top",
-                    toggleActions: "restart pause reverse pause",
-                    scrub: true,
-                }, 
-                y: 250, 
-                ease: "out"
-            }
-        )
-    }, []);
+    // useEffect(() => {
+    //     // -25 to -200
+    //     // relearn: https://greensock.com/docs/v3/Plugins/ScrollTrigger
+    //     // don't forget to import from gsap/dist/x
+    //     gsap.fromTo("#bulb", 
+    //         {y: 0}, 
+    //         {
+    //             scrollTrigger: {
+    //                 trigger: "#experiences",
+    //                 start: "top bottom",
+    //                 end: "top top",
+    //                 toggleActions: "restart pause reverse pause",
+    //                 scrub: true,
+    //             }, 
+    //             y: 250, 
+    //             ease: "out"
+    //         }
+    //     )
+    // }, []);
 
     return(
         <main>
-            <div className="absolute -top-[10rem] right-[32rem]" id="bulb">
+            <div className="absolute -top-[28rem] right-4 xl:-top-[10rem] xl:right-[32rem]" id="bulb">
                 <Image 
                     src="/lightbulb.svg"
                     width={100}
@@ -67,7 +67,7 @@ const Landing = () => {
                 />
             </div>
 
-            <div className="flex flex-col justify-center h-screen" id="introduction">
+            <div className="flex flex-col justify-center h-[90vh] md:h-screen" id="introduction">
                 <Introduction />
             </div>
 
@@ -87,12 +87,17 @@ const Landing = () => {
             </div>
 
             <div id="technologies">
-                <Title>// Technologies I&apos;ve used</Title>
+                <Title>//{" Technologies I've Used"}</Title>
                 <Swiper
                     spaceBetween={15}
                     slidesPerView={7}
                     modules={[Navigation, Pagination]}
-                    pagination={true}
+                    // pagination={{
+                    //     type: "fraction",
+                    //     // renderFraction: (index, className) => {
+                    //     //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    //     // }
+                    // }}
                     navigation={true}
                     className="w-[85%] h-[110px]"
                     data-aos="fade-up"
@@ -118,7 +123,7 @@ const Landing = () => {
             </div>
 
             <div className="mb-36" id="letsconnect">
-                <Title>// Let&apos;s connect.</Title>
+                <Title>// Let&apos;s <span className="text-fuchsia-300 inline">connect.</span></Title>
                 <LetsConnect />
             </div>
         </main>

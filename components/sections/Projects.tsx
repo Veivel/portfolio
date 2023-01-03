@@ -12,8 +12,7 @@ export default function Projects() {
                 technologies={["nextjs", "tailwind", "docker", "strapi"]}
                 imgSrc="/placeholder.jpeg"
             >
-                <p>Created a website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
-                <br/>
+                <p>Created a full-stack website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
                 <ul>
                     <li>Deployed Strapi for the client&apos;s CMS using Docker and Postgres.</li>
                     <li>Designed and built a responsive landing page and registration form with client requirements.</li>
@@ -25,12 +24,12 @@ export default function Projects() {
                     <Link href="https://github.com/veivel/monsieurrezan-backend">Backend <Ext /></Link>
                 </LinksDiv>
             </ProjectCard>
-            <div className="flex flex-row space-x-8">
+            <div className="flex flex-col space-y-6 md:flex-row md:space-x-8 md:space-y-2">
                 <ProjectCard
                     title="Flashcards"
                     status="Completed"
                     technologies={["react"]}
-                    imgSrc="/placeholder.jpeg"
+                    imgSrc="/content/flashcards.png"
                     orientation="normal"
                 >
                     <p>A fully functional flashcard/quiz web app; my first ever React project using Redux.</p>
@@ -43,7 +42,7 @@ export default function Projects() {
                     title="Scrap.py"
                     status="Completed"
                     technologies={["django", "python", "flutter"]}
-                    imgSrc="/placeholder.jpeg"
+                    imgSrc="/content/scrappy.png"
                     orientation="normal"
                 >
                     <p>A working system for a digital waste bank, completed as part of my university&apos;s <i>Pengembangan Berbasis Platform</i> course.</p>

@@ -12,7 +12,7 @@ export default function LetsConnect() {
 
     return(
         <>
-            <div className="mx-auto w-[60%] text-center">
+            <div className="mx-auto w-[100%] md:w-[60%] text-center" data-aos="fade-up">
                 <h3>{"I'm always open to chat, so don't hesitate to contact me!"}</h3>
                 <br/>
                 <div className="flex flex-row justify-center">
@@ -28,8 +28,8 @@ export default function LetsConnect() {
                 </div>
                 {/* <sub>{note}</sub> */}
                 <div className="flex flex-row my-8 space-x-16 justify-center">
-                    <Social size={100} iconId="github" />
-                    <Social size={100} iconId="linkedin" />
+                    <Social size={85} iconId="github" />
+                    <Social size={85} iconId="linkedin" />
                 </div>
             </div>
         </>

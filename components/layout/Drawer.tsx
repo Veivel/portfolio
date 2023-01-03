@@ -26,7 +26,7 @@ export default function Drawer(): JSX.Element {
         <>
             { isDrawerOpen ? 
                 <div className={
-                    `fixed left-0 top-0 [z-index: 100] flex flex-col z-50 w-[40%] h-screen
+                    `fixed left-0 top-0 [z-index: 100] flex flex-col z-50 md:w-[50%] xl:w-[40%] h-screen
                     shadow-md 
                     ${styles.MenuWrapper}`
                 }>
@@ -36,7 +36,7 @@ export default function Drawer(): JSX.Element {
                     >
                         {Object.keys(SECTIONS).map((section, idx) => (
                             <a key={idx} onClick={e => handleScroll(SECTIONS[section])} className="hover:cursor-pointer font-bold">
-                                {section}
+                                <h3>{section}</h3>
                             </a>
                         ))}
                     </div> 

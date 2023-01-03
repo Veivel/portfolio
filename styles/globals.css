@@ -12,89 +12,117 @@
   src: url('/Raleway-Black.ttf') format('truetype');
 }
 
-/* Main stuff */
+/* ============== Paddings and stuff ============== */
 
+main {
+  padding-top: 0rem;
+  padding-inline: 1.5rem;
+  overflow: hidden;
+}
+
+/* sm */
+@media (min-width: 640px) {
+  main {
+    padding-top: 0rem;
+    padding-inline: 6rem;
+  }
+}
+
+/* md */
 @media (min-width: 768px) {
   main {
     padding-top: 0rem;
-    padding-inline: 4rem;
-    overflow: hidden;
+    padding-inline: 6rem;
   }
 }
+
+/* xl */
 @media (min-width: 1280px) { 
   main {
     padding-top: 0rem;
     padding-inline: 12rem;
-    overflow: hidden;
   }
 }
 
-
 body {
   /* background-color: rgb(16, 16, 16); */
-  background-image: url('/bg.svg');
+  background-image: url('/bg-2.svg');
   background-size: cover;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
+  font-size: small;
 }
 
+/* ============== below md =============== */
 
-
-@media (min-width: 768px) {
-  h1 {
-    font-family: 'Raleway';
-    font-size: 2rem;
-    font-variation-settings: "wght" 750;
-  }
-}
-@media (min-width: 1280px) {
-  h1 {
-    font-family: 'Raleway';
-    font-size: 3rem;
-    font-variation-settings: "wght" 750;
-  }
+h1 {
+  font-family: 'Raleway';
+  font-size: xx-large;
+  font-variation-settings: "wght" 750;
 }
 
-@media (min-width: 768px) {
-  h2 {
-    font-family: 'Raleway';
-    font-size: larger;
-    font-variation-settings: "wght" 700;
-  }
-}
-@media (min-width: 1280px) {
-  h2 {
-    font-family: 'Raleway';
-    font-size: x-large;
-    font-variation-settings: "wght" 700;
-  }
+h2 {
+  font-family: 'Raleway';
+  font-size: 1.2rem;
+  font-variation-settings: "wght" 600;
 }
 
-@media (min-width: 768px) {
-  h3 {
+h3 {
     font-family: 'Raleway';
-    font-size: large;
+    font-size: medium;
     font-variation-settings: "wght" 500;
-  }
-}
-@media (min-width: 1280px) {
-  h3 {
-    font-family: 'Raleway';
-    font-size: large;
-    font-variation-settings: "wght" 500;
-  }
 }
 
 h4 {
   font-family: 'Raleway';
-  font-size: medium;
+  font-size: small;
   font-variation-settings: "wght" 500;
 }
 
 sub {
   font-size: small;
   font-variation-settings: "wght" 100;
+}
+
+/* ============== MD screens =============== */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: larger;
+  }
+  h3 {
+    font-size: medium;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============== XL screens =============== */
+
+@media (min-width: 1280px) {
+  body {
+    font-size: medium;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: x-large;
+  }
+  h3 {
+    font-size: large;
+  }
+  h4 {
+    font-size: medium;
+  }
 }
 
 /* Lists & Paragraphs */
@@ -146,21 +174,8 @@ Link, a:active {
   left: -16%;
 }
 
-
-/*
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.custom-pagination{
+  background: rgb(255, 255, 255);
+  border-radius: 9999px;
+  border: 1px solid black;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-} */

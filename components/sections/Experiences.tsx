@@ -5,12 +5,12 @@ import LinksDiv from "../layout/LinksDiv";
 
 export default function Experiences() {
     return(
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
             <WorkCard
                 title="Frontend Engineer Intern @ AdainAcara"
                 period="Dec 2022 - Present"
                 technologies={["nextjs", "tailwind"]}
-                imgSrc="/content/adainacara-1.jpeg"
+                imgSrc="/placeholder.jpeg"
             >
                 <ul>
                     <li>Initiated the migration of the Bootstrap-powered prototype to a Figma-directed Tailwind design</li>
@@ -31,7 +31,7 @@ export default function Experiences() {
                 title="Web Developer @ BETIS Fasilkom UI"
                 period="Nov 2022 - Present"
                 technologies={["nextjs", "tailwind"]}
-                imgSrc="/placeholder.jpeg"
+                imgSrc="/content/betis.png"
             >
                 <ul>
                     <li>Worked in a team of 7 to translate Figma designs into the website.</li>
@@ -40,10 +40,10 @@ export default function Experiences() {
 
                 <LinksDiv>
                     <Link href="https://betis.cs.ui.ac.id/">
-                                Website <Ext />
+                        Website <Ext />
                     </Link>
                     <Link href="https://github.com/BETIS-2023/">
-                                Repositories <Ext />
+                        Repositories <Ext />
                     </Link>
                 </LinksDiv>
             </WorkCard>
