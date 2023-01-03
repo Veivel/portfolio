@@ -41,6 +41,12 @@ h3 {
   font-variation-settings: "wght" 500;
 }
 
+h4 {
+  font-family: 'Raleway';
+  font-size: medium;
+  font-variation-settings: "wght" 500;
+}
+
 sub {
   font-size: small;
   font-variation-settings: "wght" 100;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
-import Icon from "../Icon";
+import TippedIcon from "../icons/TippedIcon";
 import Card from "./Card";
 
 type PROJECT_PROPS_TYPE = {
@@ -21,7 +21,7 @@ export default function WorkCard({ title, period, technologies, children, imgSrc
             </div>
             <div className="flex flex-row space-x-2 mb-6">
                 {technologies.map((item, idx) => (
-                    <Icon size={45} iconId={item} key={idx}/>
+                    <TippedIcon size={45} iconId={item} key={idx}/>
                 ))}
             </div>
             {children}

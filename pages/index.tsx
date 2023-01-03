@@ -7,13 +7,14 @@ import { useContext } from 'react'
 import { AppContext } from '../components/layout/context/AppProvider'
 import Hamburger from '../components/layout/Hamburger'
 import Drawer from '../components/layout/Drawer'
+import Footer from '../components/layout/Footer'
 
 export default function Home() {
 
     return (
         <>
             <Head>
-                <title>{"Veivel's Landing"}</title>
+                <title>{"Veivel's Portfolio"}</title>
                 <meta name="description" content="Givarrel Veivel Pattiwael's web portfolio." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -22,6 +23,7 @@ export default function Home() {
             <Hamburger />
             <Drawer />
             <Landing />
+            <Footer />
         </>
     )
 }

@@ -18,38 +18,38 @@ type ICONS_DATA_TYPE = {
 
 const ICONS:ICONS_DATA_TYPE = {
     "nextjs": {
-        'src': '/icons/nextjs.png',
+        'src': '/icons/technologies/nextjs.png',
         'tooltip': 'Next JS'
     },
     "django": {
-        'src': '/icons/django.png',
+        'src': '/icons/technologies/django.png',
         'tooltip': 'Django'
     },
     "go": {
-        'src': '/icons/go.png',
+        'src': '/icons/technologies/go.png',
         'tooltip': 'Go'
     },
     "flutter": {
-        'src': '/icons/flutter.png',
+        'src': '/icons/technologies/flutter.png',
         'tooltip': 'Flutter'
     },
     "tailwind": {
-        'src': '/icons/tailwind.png',
+        'src': '/icons/technologies/tailwind.png',
         'tooltip': 'TailwindCSS'
     },
     "typescript": {
-        'src': '/icons/typescript.png',
+        'src': '/icons/technologies/typescript.png',
         'tooltip': 'Typescript'
     },
 }
 
-export default function Icon({ size, iconId }: ICON_PROPS_TYPE) {    
+export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {    
     return(
         <>
             <div className="tooltip hover:scale-[95%] shadow-sm">
                 <Image 
                     src={ICONS[iconId]["src"]}
-                    alt="nextjs"
+                    alt={iconId}
                     width={size}
                     height={size}
                 />
