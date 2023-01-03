@@ -5,7 +5,7 @@ import LinksDiv from "../layout/LinksDiv";
 
 export default function Experiences() {
     return(
-        <div className="grid grid-cols-2 gap-4" id="experiences">
+        <div className="grid grid-cols-2 gap-4">
             <WorkCard
                 title="Frontend Engineer Intern @ AdainAcara"
                 period="Dec 2022 - Present"

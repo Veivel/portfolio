@@ -4,8 +4,10 @@ type TITLE_PROPS_TYPE = {
 
 export default function Title({ children }: TITLE_PROPS_TYPE): JSX.Element {
     return(
-        <div className="mt-32 mb-12 bg-red-900 w-screen relative -left-52 pl-52">
-            <h1 data-aos="fade-right">{children}</h1>
+        <div className="lg:mt-16 xl:mt-32 mb-12 py-2 bg-red-900 w-[200%] relative -left-52 pl-52">
+            <h1 data-aos="fade-right">
+                {children}
+            </h1>
         </div>
     );
 }

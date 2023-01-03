@@ -76,18 +76,17 @@ const Landing = () => {
                 <Experiences />
             </div>
 
-            <div>
+            <div id="projects">
                 <Title>// Projects</Title>
                 <Projects />
             </div>
 
-            <div>
+            <div id="education">
                 <Title>// Education & Certifications</Title>
                 <Education />
             </div>
 
-            {/* this should be a tiny carousel, nothing else */}
-            <div>
+            <div id="technologies">
                 <Title>// Technologies I&apos;ve used</Title>
                 <Swiper
                     spaceBetween={20}
@@ -106,12 +105,12 @@ const Landing = () => {
                 </Swiper>
             </div>
 
-            <div>
+            <div id="misc">
                 <Title>// Miscellaneous (...)</Title>
                 <Miscellaneous />
             </div>
 
-            <div className="mb-36">
+            <div className="mb-36" id="letsconnect">
                 <Title>// Let&apos;s connect.</Title>
                 <LetsConnect />
             </div>

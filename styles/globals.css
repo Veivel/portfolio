@@ -14,6 +14,22 @@
 
 /* Main stuff */
 
+@media (min-width: 768px) {
+  main {
+    padding-top: 0rem;
+    padding-inline: 4rem;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1280px) { 
+  main {
+    padding-top: 0rem;
+    padding-inline: 12rem;
+    overflow: hidden;
+  }
+}
+
+
 body {
   /* background-color: rgb(16, 16, 16); */
   background-image: url('/bg.svg');
@@ -23,22 +39,51 @@ body {
   font-weight: 200;
 }
 
-h1 {
-  font-family: 'Raleway';
-  font-size: 3rem;
-  font-variation-settings: "wght" 750;
+
+
+@media (min-width: 768px) {
+  h1 {
+    font-family: 'Raleway';
+    font-size: 2rem;
+    font-variation-settings: "wght" 750;
+  }
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-family: 'Raleway';
+    font-size: 3rem;
+    font-variation-settings: "wght" 750;
+  }
 }
 
-h2 {
-  font-family: 'Raleway';
-  font-size: x-large;
-  font-variation-settings: "wght" 700;
+@media (min-width: 768px) {
+  h2 {
+    font-family: 'Raleway';
+    font-size: larger;
+    font-variation-settings: "wght" 700;
+  }
+}
+@media (min-width: 1280px) {
+  h2 {
+    font-family: 'Raleway';
+    font-size: x-large;
+    font-variation-settings: "wght" 700;
+  }
 }
 
-h3 {
-  font-family: 'Raleway';
-  font-size: large;
-  font-variation-settings: "wght" 500;
+@media (min-width: 768px) {
+  h3 {
+    font-family: 'Raleway';
+    font-size: large;
+    font-variation-settings: "wght" 500;
+  }
+}
+@media (min-width: 1280px) {
+  h3 {
+    font-family: 'Raleway';
+    font-size: large;
+    font-variation-settings: "wght" 500;
+  }
 }
 
 h4 {
@@ -71,11 +116,6 @@ Link, a:hover {
 
 Link, a:active {
   color: blue;
-}
-
-main {
-  padding-top: 0rem;
-  padding-inline: 12rem;
 }
 
 /* Tooltip Container */
