@@ -19,11 +19,10 @@ const CardImage = (props: any) => (
 );
 
 export default function Card({ children, imgSrc, orientation }: CARD_PROPS_TYPE): JSX.Element {
-    
 
     if (orientation === "left" || orientation === "right") {
         return(
-            <div className={`w-full rounded-xl bg-white text-black shadow-lg shadow-red-500 flex flex-row md:h-[350px] xl:h-[380px]`} data-aos="fade-up">
+            <div className={`w-full rounded-xl bg-white text-black shadow-lg shadow-blue-700 flex flex-row md:h-[350px] xl:h-[380px]`} data-aos="fade-up">
                 { orientation === "left" ? <CardImage left src={imgSrc} /> : <></> }
                 <div className="px-6 py-4 w-[50%]">
                     {children}
@@ -33,7 +32,7 @@ export default function Card({ children, imgSrc, orientation }: CARD_PROPS_TYPE)
         );
     } else {
         return(
-            <div className={`w-full rounded-xl bg-white text-black shadow-lg shadow-red-500`} data-aos="fade-up">
+            <div className={`w-full rounded-xl bg-white text-black shadow-lg shadow-blue-700`} data-aos="fade-up">
                 <CardImage src={imgSrc} />
                 <div className="px-6 py-4">
                     {children}
