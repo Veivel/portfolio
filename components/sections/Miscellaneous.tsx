@@ -20,7 +20,7 @@ export default function Miscellaneous() {
                     <ul>
                         <li>Guided 13 freshmen in studying basic programming logic with Python.</li>
                         <li>Wrote and graded weekly labs and monthly assignments for the entire semester.</li>
-                        <li>Provided assistance by teaching for students' preparation ahead of finals.</li>
+                        <li>Provided assistance by teaching for students&apos; preparation ahead of finals.</li>
                     </ul>
                 </div>
             </>

@@ -33,9 +33,9 @@ export default function Introduction(): JSX.Element {
             </div>
             <div className="lg:mt-8 xl:mt-12 lg:w-[70%] xl:w-[50%]" data-aos="fade-up">
                 <h3>
-                    Currently, I am in my second year of pursuing a Computer Science undergraduate degree. 
+                    {`Currently, I am in my second year of pursuing a Computer Science undergraduate degree. 
                     I've recently found interest in the realm of data science and web development, 
-                    so I have been spending my free time learning new things about the two topics.
+                    so I have been spending my free time learning new things about the two topics.`}
                 </h3>
             </div>
             <button 

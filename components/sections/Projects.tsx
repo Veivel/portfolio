@@ -46,7 +46,7 @@ export default function Projects() {
                     imgSrc="/placeholder.jpeg"
                     orientation="normal"
                 >
-                    <p>A working system for a digital waste bank, completed as part of my university's <i>Pengembangan Berbasis Platform</i> course.</p>
+                    <p>A working system for a digital waste bank, completed as part of my university&apos;s <i>Pengembangan Berbasis Platform</i> course.</p>
                     <ul>
                         <li>Implemented in two parts: on the web (as a website), and via a mobile app.</li>
                         <li>Collaborated in a team of 5 to complete and deploy the project.</li>
