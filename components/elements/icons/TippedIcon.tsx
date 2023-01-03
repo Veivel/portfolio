@@ -41,6 +41,34 @@ const ICONS:ICONS_DATA_TYPE = {
         'src': '/icons/technologies/typescript.png',
         'tooltip': 'Typescript'
     },
+    "react": {
+        'src': '/icons/technologies/reactjs.png',
+        'tooltip': 'React'
+    },
+    "nodejs": {
+        'src': '/icons/technologies/nodejs.png',
+        'tooltip': 'NodeJS'
+    },
+    "python": {
+        'src': '/icons/technologies/python.png',
+        'tooltip': 'Python'
+    },
+    "java": {
+        'src': '/icons/technologies/java.png',
+        'tooltip': 'Java'
+    },
+    "strapi": {
+        'src': '/icons/technologies/strapi.png',
+        'tooltip': 'Strapi'
+    },
+    "postgresql": {
+        'src': '/icons/technologies/postgresql.png',
+        'tooltip': 'PostgreSQL'
+    },
+    "docker": {
+        'src': '/icons/technologies/docker.png',
+        'tooltip': 'Docker'
+    },
 }
 
 export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {    

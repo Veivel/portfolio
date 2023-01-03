@@ -6,7 +6,7 @@ export default function LetsConnect() {
     const [note, setNote] = useState<string>(" ");
 
     function handleCopy() {
-        navigator.clipboard.writeText("givarrel.veivel@ui.ac.id");
+        navigator.clipboard.writeText(process.env.NEXT_PUBLIC_EMAIL_ADDRESS || "-");
         setNote("Email address copied!")
     }
 

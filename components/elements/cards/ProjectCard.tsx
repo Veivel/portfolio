@@ -10,11 +10,12 @@ type PROJECT_PROPS_TYPE = {
     technologies: string[]
     children: any
     imgSrc: string
+    orientation?: "left" | "right" | "normal"
 }
 
-export default function ProjectCard({ title, status, technologies, children, imgSrc }: PROJECT_PROPS_TYPE): JSX.Element {
+export default function ProjectCard({ title, status, technologies, children, imgSrc, orientation }: PROJECT_PROPS_TYPE): JSX.Element {
     return(
-        <Card imgSrc={imgSrc} orientation="left">
+        <Card imgSrc={imgSrc} orientation={orientation || "left"}>
             <div className="flex flex-col justify-between">
                 <h2><Balancer>{title}</Balancer></h2>
                 <p className="text-sm">{status}</p>

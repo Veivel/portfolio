@@ -33,10 +33,9 @@ export default function Experiences() {
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/placeholder.jpeg"
             >
-                <p>Did some important stuff, continue here.</p>
                 <ul>
-                    <li>Did something here, something there.</li>
-                    <li>Did something here, something there.</li>
+                    <li>Worked in a team of 7 to translate Figma designs into the website.</li>
+                    <li>Responsible for an editable registration form that interacts with the site API.</li>
                 </ul>
 
                 <LinksDiv>

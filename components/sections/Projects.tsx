@@ -8,23 +8,56 @@ export default function Projects() {
         <>
             <ProjectCard
                 title="Monsieur Rezan's Website"
-                status="Completed"
-                technologies={["nextjs", "tailwind"]}
+                status="Work In Progress"
+                technologies={["nextjs", "tailwind", "docker", "strapi"]}
                 imgSrc="/placeholder.jpeg"
             >
-                <p>Created a professional website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
+                <p>Created a website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
+                <br/>
                 <ul>
                     <li>Deployed Strapi for the client&apos;s CMS using Docker and Postgres.</li>
                     <li>Designed and built a responsive landing page and registration form with client requirements.</li>
-                    <li>Utilized...</li>
                 </ul>
 
                 <LinksDiv>
-                    <Link href="/">Deployment <Ext /></Link>
-                    <Link href="https://github.com/veivel/monsieurrezan.com">Frontend Repo <Ext /></Link>
-                    <Link href="https://github.com/veivel/monsieurrezan-backend">Backend Repo <Ext /></Link>
+                    {/* <Link href="/">Deployment <Ext /></Link> */}
+                    <Link href="https://github.com/veivel/monsieurrezan.com">Frontend <Ext /></Link>
+                    <Link href="https://github.com/veivel/monsieurrezan-backend">Backend <Ext /></Link>
                 </LinksDiv>
             </ProjectCard>
+            <div className="flex flex-row space-x-8">
+                <ProjectCard
+                    title="Flashcards"
+                    status="Completed"
+                    technologies={["react"]}
+                    imgSrc="/placeholder.jpeg"
+                    orientation="normal"
+                >
+                    <p>A fully functional flashcard/quiz web app; my first ever React project using Redux.</p>
+                    <LinksDiv>
+                        <Link href="https://youraverageflashcards.netlify.app/">Deployment <Ext /></Link>
+                        <Link href="https://github.com/veivel/flashcards">Repository <Ext /></Link>
+                    </LinksDiv>
+                </ProjectCard>
+                <ProjectCard
+                    title="Scrap.py"
+                    status="Completed"
+                    technologies={["django", "python", "flutter"]}
+                    imgSrc="/placeholder.jpeg"
+                    orientation="normal"
+                >
+                    <p>A working system for a digital waste bank, completed as part of my university's <i>Pengembangan Berbasis Platform</i> course.</p>
+                    <ul>
+                        <li>Implemented in two parts: on the web (as a website), and via a mobile app.</li>
+                        <li>Collaborated in a team of 5 to complete and deploy the project.</li>
+                    </ul>
+                    <LinksDiv>
+                        <Link href="https://youraverageflashcards.netlify.app/">Deploy (Web)<Ext /></Link>
+                        <Link href="https://github.com/veivel/flashcards">Repo (Web)<Ext /></Link>
+                        <Link href="https://youraverageflashcards.netlify.app/">Repo(Mobile)<Ext /></Link>
+                    </LinksDiv>
+                </ProjectCard>
+            </div>
         </>
     );
 }

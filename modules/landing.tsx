@@ -76,7 +76,7 @@ const Landing = () => {
                 <Experiences />
             </div>
 
-            <div id="projects">
+            <div className="space-y-8" id="projects">
                 <Title>// Projects</Title>
                 <Projects />
             </div>
@@ -89,24 +89,31 @@ const Landing = () => {
             <div id="technologies">
                 <Title>// Technologies I&apos;ve used</Title>
                 <Swiper
-                    spaceBetween={20}
-                    slidesPerView={5}
+                    spaceBetween={15}
+                    slidesPerView={7}
                     modules={[Navigation, Pagination]}
                     pagination={true}
-                    className="w-[45%] h-[150px]"
+                    navigation={true}
+                    className="w-[85%] h-[110px]"
                     data-aos="fade-up"
                 >
-                    <SwiperSlide><TippedIcon size={75} iconId="nextjs" /></SwiperSlide>
                     <SwiperSlide><TippedIcon size={75} iconId="go" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="django" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="nextjs" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="postgresql" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="docker" /></SwiperSlide>
                     <SwiperSlide><TippedIcon size={75} iconId="flutter" /></SwiperSlide>
                     <SwiperSlide><TippedIcon size={75} iconId="tailwind" /></SwiperSlide>
                     <SwiperSlide><TippedIcon size={75} iconId="typescript" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="react" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="django" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="strapi" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="java" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="python" /></SwiperSlide>
                 </Swiper>
             </div>
 
             <div id="misc">
-                <Title>// Miscellaneous (...)</Title>
+                <Title>// Miscellaneous...</Title>
                 <Miscellaneous />
             </div>
 
