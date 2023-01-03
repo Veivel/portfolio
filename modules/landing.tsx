@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AppContext, AppProvider } from "../components/layout/context/AppProvider";
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { useIsInViewport } from "../components/utils/useIsInViewport";
 import TippedIcon from "../components/elements/icons/TippedIcon";
 // import styles from '../styles/Home.module.css'
@@ -34,6 +34,15 @@ import Education from "../components/sections/Education";
 // gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
+    const [bulb, setBulb] = useState<string>("/betterbulb.png");
+
+    function toggleBulb() {
+        if (bulb === "/betterbulb.png") {
+            setBulb("/betterbulb-off.png")
+        } else {
+            setBulb("/betterbulb.png")
+        }
+    }
 
     // useEffect(() => {
     //     // -25 to -200
@@ -57,13 +66,14 @@ const Landing = () => {
 
     return(
         <main>
-            <div className="absolute -top-[28rem] right-4 xl:-top-[10rem] xl:right-[32rem]" id="bulb">
+            <div className="absolute -top-[28rem] right-4 xl:-top-[6rem] xl:right-16" id="bulb">
                 <Image 
-                    src="/lightbulb.svg"
-                    width={100}
-                    height={550}
+                    src={bulb}
+                    width={200}
+                    height={600}
                     alt="hanging light bulb"
-                    className=" opacity-50"
+                    className="opacity-100"
+                    onClick={e => toggleBulb()}
                 />
             </div>
 
