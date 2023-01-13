@@ -51,9 +51,9 @@ export default function Projects() {
                         <li>Collaborated in a team of 5 to complete and deploy the project.</li>
                     </ul>
                     <LinksDiv>
-                        <Link href="https://youraverageflashcards.netlify.app/">Deploy (Web)<Ext /></Link>
-                        <Link href="https://github.com/veivel/flashcards">Repo (Web)<Ext /></Link>
-                        <Link href="https://youraverageflashcards.netlify.app/">Repo(Mobile)<Ext /></Link>
+                        <Link href="https://scrappy.up.railway.app/">Deploy (Web)<Ext /></Link>
+                        <Link href="https://github.com/veivel/scrap.py">Repo (Web)<Ext /></Link>
+                        <Link href="https://github.com/arkanalexei/scrap.py-mobile">Repo(Mobile)<Ext /></Link>
                     </LinksDiv>
                 </ProjectCard>
             </div>

@@ -3,15 +3,7 @@ import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import TippedIcon from "../icons/TippedIcon";
 import Card from "./Card";
-
-type PROJECT_PROPS_TYPE = {
-    title: string
-    status: string
-    technologies: string[]
-    children: any
-    imgSrc: string
-    orientation?: "left" | "right" | "normal"
-}
+import { PROJECT_PROPS_TYPE } from "./types";
 
 export default function ProjectCard({ title, status, technologies, children, imgSrc, orientation }: PROJECT_PROPS_TYPE): JSX.Element {
     return(

@@ -1,24 +1,13 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
+
 import Image from "next/image";
 import Link from "next/link";
 import { AppContext, AppProvider } from "../components/layout/context/AppProvider";
-import { useContext, useEffect, useRef, useState } from "react";
-import { useIsInViewport } from "../components/utils/useIsInViewport";
+import { useState } from "react";
 import TippedIcon from "../components/elements/icons/TippedIcon";
 // import styles from '../styles/Home.module.css'
 
-// Swiper deps
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from "swiper";
-import Balancer from "react-wrap-balancer";
-import Card from "../components/elements/cards/Card";
 import Title from "../components/elements/Title";
-import WorkCard from "../components/elements/cards/WorkCard";
-import LinksDiv from "../components/layout/LinksDiv";
-import ProjectCard from "../components/elements/cards/ProjectCard";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Ext from "../components/elements/Ext";
@@ -26,10 +15,9 @@ import Introduction from "../components/sections/Introduction";
 import Experiences from "../components/sections/Experiences";
 import Projects from "../components/sections/Projects";
 import Miscellaneous from "../components/sections/Miscellaneous";
-import Social from "../components/elements/icons/SocialIcon";
-import Clipboard from "../components/elements/Clipboard";
 import LetsConnect from "../components/sections/LetsConnect";
 import Education from "../components/sections/Education";
+import Technologies from "../components/sections/Technologies";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -66,12 +54,12 @@ const Landing = () => {
 
     return(
         <main>
-            <div className="absolute -top-[28rem] right-4 xl:-top-[6rem] xl:right-16" id="bulb">
+            <div className="hidden md:visible absolute lg:right-4 lg:-top-[12rem] xl:-top-[6rem] xl:right-16 2xl:right-48" id="bulb">
                 <Image 
                     src={bulb}
                     width={200}
                     height={600}
-                    alt="hanging light bulb"
+                    alt="veivel 's hanging bulb"
                     className="opacity-100"
                     onClick={e => toggleBulb()}
                 />
@@ -82,7 +70,7 @@ const Landing = () => {
             </div>
 
             <div id="experiences">
-                <Title>// My Experiences</Title>
+                <Title>{"// My Experiences"}</Title>
                 <Experiences />
             </div>
 
@@ -91,49 +79,25 @@ const Landing = () => {
                 <Projects />
             </div>
 
+            <div id="technologies">
+                <Title>{"// Technologies I've Used"}</Title>
+                <Technologies />
+            </div>
+
             <div id="education">
                 <Title>// Education & Certifications</Title>
                 <Education />
             </div>
 
-            <div id="technologies">
-                <Title>//{" Technologies I've Used"}</Title>
-                <Swiper
-                    spaceBetween={15}
-                    slidesPerView={7}
-                    modules={[Navigation, Pagination]}
-                    // pagination={{
-                    //     type: "fraction",
-                    //     // renderFraction: (index, className) => {
-                    //     //     return '<span class="' + className + '">' + (index + 1) + '</span>';
-                    //     // }
-                    // }}
-                    navigation={true}
-                    className="w-[85%] h-[110px]"
-                    data-aos="fade-up"
-                >
-                    <SwiperSlide><TippedIcon size={75} iconId="go" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="nextjs" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="postgresql" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="docker" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="flutter" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="tailwind" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="typescript" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="react" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="django" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="strapi" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="java" /></SwiperSlide>
-                    <SwiperSlide><TippedIcon size={75} iconId="python" /></SwiperSlide>
-                </Swiper>
-            </div>
-
-            <div id="misc">
+            {/* <div id="misc">
                 <Title>// Miscellaneous...</Title>
                 <Miscellaneous />
-            </div>
+            </div> */}
 
             <div className="mb-36" id="letsconnect">
-                <Title>// Let&apos;s <span className="text-fuchsia-300 inline">connect.</span></Title>
+                <Title>
+                    {"// Let's "}<span className="text-fuchsia-300 inline">connect.</span>
+                </Title>
                 <LetsConnect />
             </div>
         </main>

@@ -1,10 +1,5 @@
 import Image from "next/image";
-
-type EXT_PROPS_TYPE = {
-    size?: number
-    white?: boolean
-    black?: boolean
-}
+import { EXT_PROPS_TYPE } from "./types";
 
 export default function Ext({ size, white, black }: EXT_PROPS_TYPE) {
     function getSrc() {

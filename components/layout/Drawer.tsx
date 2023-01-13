@@ -6,9 +6,9 @@ const SECTIONS: any = {
     "About Me": "introduction",
     "My Experiences": "experiences",
     "Projects": "projects",
-    "Education & Certifications": "education",
+    // "Education & Certifications": "education",
     "Technologies & Skills": "technologies",
-    "Miscellaneous": "misc",
+    // "Miscellaneous": "misc",
     "Contact Me": "letsconnect",
 }
 
@@ -26,7 +26,7 @@ export default function Drawer(): JSX.Element {
         <>
             { isDrawerOpen ? 
                 <div className={
-                    `fixed left-0 top-0 [z-index: 100] flex flex-col z-50 md:w-[50%] xl:w-[40%] h-screen
+                    `fixed left-0 top-0 [z-index: 100] flex flex-col z-50 w-[65%] md:w-[55%] lg:w-[50%] xl:w-[40%] 2xl:w-[30%] h-screen
                     shadow-md 
                     ${styles.MenuWrapper}`
                 }>

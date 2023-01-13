@@ -1,12 +1,7 @@
 import Image from "next/image";
+import { CLIPBOARD_PROPS_TYPE } from "./types";
 
-type CB_PROPS_TYPE = {
-    size?: number
-    white?: boolean
-    black?: boolean
-}
-
-export default function Clipboard({ size, white, black }: CB_PROPS_TYPE): JSX.Element {
+export default function Clipboard({ size, white, black }: CLIPBOARD_PROPS_TYPE): JSX.Element {
     function getSrc() {
         if (black) {
             return "/icons/clipboard-black.png"
@@ -19,8 +14,8 @@ export default function Clipboard({ size, white, black }: CB_PROPS_TYPE): JSX.El
             src={getSrc()}
             width={size || 16}
             height={size || 16}
-            alt="external link"
-            className=" inline"
+            alt="clipboard"
+            className="inline"
         />
     );
 }

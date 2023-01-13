@@ -1,19 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../../styles/Icon.module.css";
-
-type ICON_PROPS_TYPE = {
-    size: number
-    iconId: string
-}
-
-type SOCIALS_DATA_TYPE = {
-    [id: string]: {
-        src: string,
-        href: string
-    },
-
-}   
+import styles from "../../../styles/Icon.module.css"; 
+import { ICON_PROPS_TYPE, SOCIALS_DATA_TYPE } from "./types";
 
 const SOCIALS:SOCIALS_DATA_TYPE = {
     "github": {
@@ -33,7 +21,7 @@ export default function Social({ size, iconId }: ICON_PROPS_TYPE) {
                 <Link href={SOCIALS[iconId]['href']} target={"_blank"}>
                     <Image 
                         src={SOCIALS[iconId]['src']}
-                        alt={iconId}
+                        alt={`icon to Veivel on ${iconId}`}
                         width={size}
                         height={size}
                         className={styles.GlowOnHover}

@@ -18,14 +18,14 @@ export default function Experiences() {
                     <li>Responsible for the landing page, vendor registration, and more.</li>
                 </ul>
 
-                <LinksDiv>
+                {/* <LinksDiv>
                     <Link href="https://example.com">
                                 Website <Ext />
                     </Link>
                     <Link href="https://example.com">
                                 Repository <Ext />
                     </Link>
-                </LinksDiv>
+                </LinksDiv> */}
             </WorkCard>
             <WorkCard
                 title="Web Developer @ BETIS Fasilkom UI"
@@ -39,11 +39,11 @@ export default function Experiences() {
                 </ul>
 
                 <LinksDiv>
-                    <Link href="https://betis.cs.ui.ac.id/">
+                    <Link href="https://betis2023.vercel.app">
                         Website <Ext />
                     </Link>
                     <Link href="https://github.com/BETIS-2023/">
-                        Repositories <Ext />
+                        Repository <Ext />
                     </Link>
                 </LinksDiv>
             </WorkCard>

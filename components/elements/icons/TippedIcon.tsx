@@ -1,20 +1,6 @@
 import { createPopper } from "@popperjs/core/lib/popper-lite";
 import Image from "next/image";
-import { type } from "os";
-import { useEffect, useRef, useState } from "react";
-import { usePopper } from "react-popper";
-
-type ICON_PROPS_TYPE = {
-    size: number
-    iconId: string
-}
-
-type ICONS_DATA_TYPE = {
-    [id: string]: {
-        src: string,
-        tooltip: string
-    }
-}   
+import { ICONS_DATA_TYPE, ICON_PROPS_TYPE } from "./types";
 
 const ICONS:ICONS_DATA_TYPE = {
     "nextjs": {
@@ -77,9 +63,10 @@ export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {
             <div className="tooltip hover:scale-[95%] shadow-sm">
                 <Image 
                     src={ICONS[iconId]["src"]}
-                    alt={iconId}
                     width={size}
                     height={size}
+                    alt={`Veivel's tech/tool: ${iconId}`}
+                    className=" z-10"
                 />
                 <span className="tooltiptext">{ICONS[iconId]["tooltip"]}</span>
             </div>
