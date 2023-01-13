@@ -54,12 +54,12 @@ const Landing = () => {
 
     return(
         <main>
-            <div className="hidden md:visible absolute lg:right-4 lg:-top-[12rem] xl:-top-[6rem] xl:right-16 2xl:right-48" id="bulb">
+            <div className="collapse absolute md:visible md:right-4 md:-top-[16rem] lg:-top-[8rem] xl:-top-[6rem] xl:right-16 2xl:right-48" id="bulb">
                 <Image 
                     src={bulb}
                     width={200}
                     height={600}
-                    alt="veivel 's hanging bulb"
+                    alt="veivel's toggleable bulb"
                     className="opacity-100"
                     onClick={e => toggleBulb()}
                 />
