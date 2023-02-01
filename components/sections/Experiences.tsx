@@ -12,11 +12,9 @@ export default function Experiences() {
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/placeholder.jpeg"
             >
-                <ul>
-                    <li>Initiated the migration of the Bootstrap-powered prototype to a Figma-directed Tailwind design</li>
-                    <li>Took charge of onboarding peer interns onto the project.</li>
-                    <li>Responsible for the landing page, vendor registration, and more.</li>
-                </ul>
+                <p>Worked in a small of team 5 with Figma designs and a constantly-evolving backend.</p>
+                <br/>
+                <p>AdainAcara is a startup...</p>
 
                 {/* <LinksDiv>
                     <Link href="https://example.com">
@@ -33,10 +31,9 @@ export default function Experiences() {
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/content/betis.png"
             >
-                <ul>
-                    <li>Worked in a team of 7 to translate Figma designs into the website.</li>
-                    <li>Responsible for an editable registration form that interacts with the site API.</li>
-                </ul>
+                <p>Worked in a team of 7 to translate Figma designs into the BETIS website.</p>
+                <br/>
+                <p>BETIS is a program made by students from the Faculty of Computer Science in Universitas Indonesia to assist high-school students in preparation for their upcoming state college entrance exam.</p>
 
                 <LinksDiv>
                     <Link href="https://betis2023.vercel.app">

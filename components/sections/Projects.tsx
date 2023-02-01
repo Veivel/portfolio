@@ -13,10 +13,6 @@ export default function Projects() {
                 imgSrc="/placeholder.jpeg"
             >
                 <p>Created a full-stack website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
-                <ul>
-                    <li>Deployed Strapi for the client&apos;s CMS using Docker and Postgres.</li>
-                    <li>Designed and built a responsive landing page and registration form with client requirements.</li>
-                </ul>
 
                 <LinksDiv>
                     {/* <Link href="/">Deployment <Ext /></Link> */}
@@ -45,11 +41,9 @@ export default function Projects() {
                     imgSrc="/content/scrappy.png"
                     orientation="normal"
                 >
-                    <p>A working system for a digital waste bank, completed as part of my university&apos;s <i>Pengembangan Berbasis Platform</i> course.</p>
-                    <ul>
-                        <li>Implemented in two parts: on the web (as a website), and via a mobile app.</li>
-                        <li>Collaborated in a team of 5 to complete and deploy the project.</li>
-                    </ul>
+                    <p>In a team of 5, we made a working system for a digital waste bank, completed as part of my university&apos;s <i>Pengembangan Berbasis Platform</i> course.</p>
+                    <br/>
+                    <p>The project was implemented in two parts: on the web (as a website using Django), and via a mobile app using Flutter.</p>
                     <LinksDiv>
                         <Link href="https://scrappy.up.railway.app/">Deploy (Web)<Ext /></Link>
                         <Link href="https://github.com/veivel/scrap.py">Repo (Web)<Ext /></Link>

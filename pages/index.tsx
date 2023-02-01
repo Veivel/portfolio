@@ -15,7 +15,7 @@ const personSchema = {
     "@type": "Person",
     "name": "Givarrel Veivel Pattiwael",
     "url": "https://veivelp.com/",
-    "image": "https://veivelp.com/_next/image?url=%2Fthebirdthing.jpeg&w=3840&q=75",
+    "image": "https://veivelp.com/_next/image?url=%2Fme-1x1.jpg&w=3840&q=75",
     "sameAs": [
         "https://www.linkedin.com/in/veivel/",
         "https://github.com/veivel/",
@@ -46,7 +46,7 @@ export default function Home() {
                 <meta name="author" content="Givarrel Veivel Pattiwael"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="keywords" content="Computer Science, Web development, Data science, Indonesia, Veivel"></meta>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/code2.ico" />
             </Head>
 
             {/* Google tag (gtag.js), read: https://nextjs.org/docs/messages/next-script-for-ga */}
