@@ -81,7 +81,7 @@ const Landing = () => {
 
     return(
         <>
-            <div>
+            <div className="invisible md:visible">
                 <Decor />
             </div>
             <main>

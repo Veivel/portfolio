@@ -1,6 +1,6 @@
 const Decor = ():JSX.Element => (
     <>
-        <div id="target1" className="absolute bottom-0 flex justify-between w-[85vw] inset-x-32">
+        <div id="target1" className="absolute bottom-0 flex justify-between md:w-[85vw] max-w-full inset-x-32">
             <div className="relative flex -bottom-24 justify-between w-[45%]">
                 <p>0</p>
                 <p className="relative -bottom-8">1</p>

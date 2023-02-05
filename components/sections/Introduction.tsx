@@ -17,7 +17,7 @@ export default function Introduction(): JSX.Element {
                         <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-500">Veivel P</span>
                         {"attiwael!"}
                     </h1>
-                    <h4 className="text-base" data-aos="fade-right"> 
+                    <h4 data-aos="fade-right"> 
                         But you can call me <b>Veivel</b>. 
                     </h4>
                     <h2 className="mt-8 xl:mt-12 text-fuchsia-400" data-aos="fade-up">
