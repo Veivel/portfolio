@@ -27,7 +27,7 @@ export default function LetsConnect() {
                     </button>
                 </div>
                 {/* <sub>{note}</sub> */}
-                <div className="flex flex-row my-8 space-x-16 justify-center">
+                <div className="flex flex-row my-6 space-x-4 justify-center">
                     <Social size={85} iconId="github" />
                     <Social size={85} iconId="linkedin" />
                 </div>

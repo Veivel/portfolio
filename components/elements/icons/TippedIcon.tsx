@@ -60,7 +60,7 @@ const ICONS:ICONS_DATA_TYPE = {
 export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {    
     return(
         <>
-            <div className="tooltip hover:scale-[95%] shadow-sm">
+            <div className="hover:scale-[92%] shadow-sm">
                 <Image 
                     src={ICONS[iconId]["src"]}
                     width={size}
@@ -68,7 +68,7 @@ export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {
                     alt={`Veivel's tech/tool: ${iconId}`}
                     className=" z-10"
                 />
-                <span className="tooltiptext">{ICONS[iconId]["tooltip"]}</span>
+                {/* <span className="tooltiptext">{ICONS[iconId]["tooltip"]}</span> */}
             </div>
         </>
     );

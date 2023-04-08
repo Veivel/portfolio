@@ -6,21 +6,39 @@ import LinksDiv from "../layout/LinksDiv";
 export default function Projects() {
     return(
         <>
-            <ProjectCard
-                title="Monsieur Rezan's Website"
-                status="Work In Progress"
-                technologies={["nextjs", "tailwind", "docker", "strapi"]}
-                imgSrc="/placeholder.jpeg"
-            >
-                <p>Created a full-stack website for language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
+            <div className="grid grid-cols-2 gap-y-6 md:flex-row md:gap-x-8 md:gap-y-2">
+                <ProjectCard
+                    title="SQL Autograder @ DAD COMPFEST"
+                    status="Work In Progress"
+                    technologies={[]}
+                    imgSrc="/placeholder.jpeg"
+                    orientation="normal"
+                >
+                    <p>...</p>
 
-                <LinksDiv>
-                    {/* <Link href="/">Deployment <Ext /></Link> */}
-                    <Link href="https://github.com/veivel/monsieurrezan.com">Frontend <Ext /></Link>
-                    <Link href="https://github.com/veivel/monsieurrezan-backend">Backend <Ext /></Link>
-                </LinksDiv>
-            </ProjectCard>
-            <div className="flex flex-col space-y-6 md:flex-row md:space-x-8 md:space-y-2">
+                    <LinksDiv>
+                        {/* <Link href="/">Deployment <Ext /></Link> */}
+                        <Link href="https://github.com/DAD-Compfest/">Repository <Ext /></Link>
+                    </LinksDiv>
+                </ProjectCard>
+
+                <ProjectCard
+                    title="Monsieur Rezan's Website"
+                    status="Work In Progress"
+                    technologies={["nextjs", "tailwind", "docker", "strapi"]}
+                    imgSrc="/content/msrrez.png"
+                    orientation="normal"
+                >
+                    <p>Created a full-stack website for my first ever client: language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
+
+                    <LinksDiv>
+                        {/* <Link href="/">Deployment <Ext /></Link> */}
+                        <Link href="https://github.com/veivel/monsieurrezan.com">Frontend <Ext /></Link>
+                        <Link href="https://github.com/veivel/monsieurrezan-backend">Backend <Ext /></Link>
+                    </LinksDiv>
+                </ProjectCard>
+
+                
                 <ProjectCard
                     title="Flashcards"
                     status="Completed"
@@ -34,6 +52,7 @@ export default function Projects() {
                         <Link href="https://github.com/veivel/flashcards">Repository <Ext /></Link>
                     </LinksDiv>
                 </ProjectCard>
+
                 <ProjectCard
                     title="Scrap.py"
                     status="Completed"

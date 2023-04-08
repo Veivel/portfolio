@@ -218,3 +218,30 @@ Link, a:active {
   border-radius: 9999px;
   border: 1px solid black;
 }
+
+.title-effect {
+  transition: transform 0.5s ease-out;
+  transition-property: all;
+  background: linear-gradient(to right, #a300c0, #d919fb);
+  background-position: 0% 100%;
+  background-size: 100% 15%;
+  background-repeat: no-repeat;
+}
+
+.title-effect:hover {
+  animation: enlarge-underline-title-effect 1s ease 1;
+  background-size: 100% 15%;
+  background-position: 0% 0%;
+}
+
+@keyframes enlarge-underline-title-effect {
+  0% {
+      background-size: 100% 15%;
+  }
+  40% {
+      background-size: 100% 300%;
+  }
+  100% {
+      background-size: 100% 15%;
+  }
+}

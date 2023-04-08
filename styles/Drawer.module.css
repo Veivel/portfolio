@@ -3,9 +3,8 @@
         from {left: -56rem;}
         to {left: 0rem;}
     }
-    animation-name: slideIn;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-out;
+    animation: slideIn 0.3s ease-out 1;
+    animation-direction: normal, reverse;
 }
 
 .MenuWrapperOut {

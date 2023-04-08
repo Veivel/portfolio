@@ -7,14 +7,14 @@ export default function Experiences() {
     return(
         <div className="grid md:grid-cols-2 gap-4">
             <WorkCard
-                title="Frontend Engineer Intern @ AdainAcara"
+                title="Frontend Engineer Intern @ Stealth"
                 period="Dec 2022 - Present"
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/placeholder.jpeg"
             >
                 <p>Worked in a small of team 5 with Figma designs and a constantly-evolving backend.</p>
                 <br/>
-                <p>AdainAcara is a startup...</p>
+                <p>The startup in question is a future marketplace platform, where I was tasked to work on registration, landing, and an admin CMS.</p>
 
                 {/* <LinksDiv>
                     <Link href="https://example.com">
@@ -26,17 +26,17 @@ export default function Experiences() {
                 </LinksDiv> */}
             </WorkCard>
             <WorkCard
-                title="Web Developer @ BETIS Fasilkom UI"
-                period="Nov 2022 - Present"
+                title="Web Developer @ BETIS"
+                period="Nov 2022 - Jan 2023"
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/content/betis.png"
             >
-                <p>Worked in a team of 7 to translate Figma designs into the BETIS website.</p>
+                <p>Worked in a team of 7 to translate Figma designs including registration and a functional course module into the BETIS website.</p>
                 <br/>
                 <p>BETIS is a program made by students from the Faculty of Computer Science in Universitas Indonesia to assist high-school students in preparation for their upcoming state college entrance exam.</p>
 
                 <LinksDiv>
-                    <Link href="https://betis2023.vercel.app">
+                    <Link href="https://betis.cs.ui.ac.id/">
                         Website <Ext />
                     </Link>
                     <Link href="https://github.com/BETIS-2023/">
