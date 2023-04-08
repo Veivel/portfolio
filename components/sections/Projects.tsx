@@ -6,7 +6,7 @@ import LinksDiv from "../layout/LinksDiv";
 export default function Projects() {
     return(
         <>
-            <div className="grid grid-cols-2 gap-y-6 md:flex-row md:gap-x-8 md:gap-y-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-8 md:gap-y-2">
                 <ProjectCard
                     title="SQL Autograder @ DAD COMPFEST"
                     status="Work In Progress"

@@ -33,7 +33,7 @@ export default function Introduction(): JSX.Element {
                     />
                 </div>
             </div>
-            <div className="mt-8 xl:mt-12 md:w-[70%] xl:w-[80%]" data-aos="fade-up">
+            <div className="mt-2 xl:mt-4 md:w-[70%] xl:w-[80%]" data-aos="fade-up">
                 <h4>
                     {`Currently, I'm a Computer Science sophomore in Universitas Indonesia. 
                     I've recently found interest in the realm of data science and web development, 
