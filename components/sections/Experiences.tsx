@@ -8,7 +8,7 @@ export default function Experiences() {
         <div className="grid md:grid-cols-2 gap-4">
             <WorkCard
                 title="Frontend Engineer Intern @ Stealth"
-                period="Dec 2022 - Present"
+                period="Dec 2022 - Mar 2023"
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/placeholder.jpeg"
             >

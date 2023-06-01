@@ -13,11 +13,11 @@ export default function LetsConnect() {
     return(
         <>
             <div className="mx-auto w-[100%] md:w-[60%] text-center" data-aos="fade-up">
-                <h3>{"I'm always open to chat, so don't hesitate to contact me!"}</h3>
+                <h3>{"I'm always open for new challenges to conquer and new ideas to bring to life. Hit me up!"}</h3>
                 <br/>
                 <div className="flex flex-row justify-center">
                     <code className="bg-gray-700 p-3 rounded-l-lg"> 
-                        givarrel.veivel [at] ui.ac.id 
+                        givarrel.veivel@ui.ac.id 
                     </code>
                     <button 
                         onClick={e => handleCopy()}
@@ -26,7 +26,7 @@ export default function LetsConnect() {
                         <Clipboard />
                     </button>
                 </div>
-                {/* <sub>{note}</sub> */}
+                <p className=" font-medium text-xs mt-4" >{note}</p>
                 <div className="flex flex-row my-6 space-x-4 justify-center">
                     <Social size={85} iconId="github" />
                     <Social size={85} iconId="linkedin" />
