@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AppContext } from "./context/AppProvider";
 import styles from "../../styles/Drawer.module.css"
 

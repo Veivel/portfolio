@@ -17,7 +17,7 @@ export default function LetsConnect() {
                 <br/>
                 <div className="flex flex-row justify-center">
                     <code className="bg-gray-700 p-3 rounded-l-lg"> 
-                        givarrel.veivel@ui.ac.id 
+                        {process.env.NEXT_PUBLIC_EMAIL_ADDRESS}
                     </code>
                     <button 
                         onClick={e => handleCopy()}

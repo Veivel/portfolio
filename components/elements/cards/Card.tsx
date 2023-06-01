@@ -10,6 +10,7 @@ const CardImage = (props: any) => (
             style={{'objectFit': 'cover'}}
             alt={`illustration of ${props.src} by Veivel`}
             fill
+            sizes="50%"
         />
     </div>
 );

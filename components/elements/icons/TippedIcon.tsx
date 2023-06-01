@@ -1,4 +1,3 @@
-import { createPopper } from "@popperjs/core/lib/popper-lite";
 import Image from "next/image";
 import { ICONS_DATA_TYPE, ICON_PROPS_TYPE } from "./types";
 

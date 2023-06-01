@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
             offset: 50,
             delay: 50,
         });
-    });
+    }, []);
 
     return(
         <AppProvider>

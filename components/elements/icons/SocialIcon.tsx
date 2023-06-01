@@ -17,18 +17,16 @@ const SOCIALS:SOCIALS_DATA_TYPE = {
 export default function Social({ size, iconId }: ICON_PROPS_TYPE) {    
     return(
         <>
-            <div>
-                <Link href={SOCIALS[iconId]['href']} target={"_blank"}>
-                    <Image 
-                        src={SOCIALS[iconId]['src']}
-                        alt={`icon to Veivel on ${iconId}`}
-                        width={size}
-                        height={size}
-                        className={styles.GlowOnHover}
-                        // className="hover:scale-[105%] hover:shadow-lg hover:shadow-blue-400"
-                    />
-                </Link>
-            </div>
+            <Link href={SOCIALS[iconId]['href']} target={"_blank"}>
+                <Image 
+                    src={SOCIALS[iconId]['src']}
+                    alt={`icon to Veivel on ${iconId}`}
+                    width={size}
+                    height={size}
+                    className={styles.GlowOnHover}
+                    // className="hover:scale-[105%] hover:shadow-lg hover:shadow-blue-400"
+                />
+            </Link>
         </>
     );
 }

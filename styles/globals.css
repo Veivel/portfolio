@@ -66,8 +66,8 @@ main {
 }
 
 body {
-  /* background-color: rgb(16, 16, 16); */
-  background-image: url('/bg-2.svg');
+  background-color: rgb(25, 1, 1);
+  /* background-image: url('/bg-2.svg'); */
   background-size: cover;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -181,44 +181,6 @@ Link, a:active {
   color: blue;
 }
 
-/* Tooltip Container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 100px;
-  background-color: whitesmoke;
-  color: black;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  font-size: smaller;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  z-index: 200;
-  pointer-events: none;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  transform: translate(-0%, 0);
-  bottom: -40%;
-  left: -16%;
-  z-index: 200;
-}
-
-.custom-pagination{
-  background: rgb(255, 255, 255);
-  border-radius: 9999px;
-  border: 1px solid black;
-}
-
 .title-effect {
   transition: transform 0.35s ease-out;
   animation: reverse-move-old-underline-title-effect 0.35s ease 1 both;
@@ -262,6 +224,13 @@ Link, a:active {
 .shiny-2 {
   animation: 3.5s shine linear infinite;
   background: linear-gradient(110deg, #ffffff 8%, #fce6ff 18%, #f3bdff 33%, #ffffff 92%);
+  background-size: 200% 100%;
+  background-clip: text;
+}
+
+.shiny-bg {
+  animation: 2.25s shine linear infinite;
+  background: linear-gradient(110deg, #f2acff 8%, #e656ff 18%, #d919fb 33%, #f2acff 92%);
   background-size: 200% 100%;
   background-clip: text;
 }
