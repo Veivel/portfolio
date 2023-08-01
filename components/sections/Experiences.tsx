@@ -7,6 +7,25 @@ export default function Experiences() {
     return(
         <div className="grid md:grid-cols-2 gap-4">
             <WorkCard
+                title="Software Engineer Intern @ UniLah"
+                period="June 2023 - Present"
+                technologies={["nestjs", "mongodb"]}
+                imgSrc="/placeholder.jpeg"
+            >
+                <p>Collaborated with another engineer to design a MongoDB database required to build the company{"'"}s API.</p>
+                <br/>
+                <p>UniLah is a Malaysia-based startup focusing on a student app.</p>
+
+                {/* <LinksDiv>
+                    <Link href="https://example.com">
+                                Website <Ext />
+                    </Link>
+                    <Link href="https://example.com">
+                                Repository <Ext />
+                    </Link>
+                </LinksDiv> */}
+            </WorkCard>
+            <WorkCard
                 title="Frontend Engineer Intern @ Stealth"
                 period="Dec 2022 - Mar 2023"
                 technologies={["nextjs", "tailwind"]}

@@ -24,57 +24,73 @@ export default function Technologies():JSX.Element {
 
     return(
         <>
-            <Swiper
-                spaceBetween={15}
-                slidesPerView={7}
-                modules={[Navigation, Pagination]}
-                ref={sliderRef}
-                breakpoints={{
-                    0: {
-                        slidesPerView: 3,
-                    },
-                    768: {
-                        slidesPerView: 5,
-                    },
-                    1000: {
-                        slidesPerView: 6,
-                    },
-                    1280: {
-                        slidesPerView: 7,
-                    },
-                    1536: {
-                        slidesPerView: 11,
-                    },
-                }}
-                // pagination={{
-                //     type: "fraction",
-                //     // renderFraction: (index, className) => {
-                //     //     return '<span class="' + className + '">' + (index + 1) + '</span>';
-                //     // }
-                // }}
-                // navigation={true}
-                className="w-[85%] xl:w-[80%] 2xl:w-[70%] h-[110px]"
-                data-aos="fade-up"
-            >
-                <SwiperSlide><TippedIcon size={75} iconId="go" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="nextjs" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="postgresql" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="docker" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="flutter" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="tailwind" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="typescript" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="react" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="django" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="strapi" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="java" /></SwiperSlide>
-                <SwiperSlide><TippedIcon size={75} iconId="python" /></SwiperSlide>
-            </Swiper>
-            <div className="flex flex-row justify-center gap-x-10 font-bold">
-                <button onClick={handlePrev} className=' bg-fuchsia-400 p-4 rounded-full hover:bg-fuchsia-400 active:bg-purple-500 w-[50px] h-[50px]'>
-                    {"←"}
+            <div className="flex flex-col md:flex-row justify-center gap-x-8 items-center">
+                <button 
+                    onClick={handlePrev} 
+                    className='text-3xl hover:scale-125 transition-all rounded-full active:bg-fuchsia-900 
+                invisible md:visible md:w-[50px] md:h-[50px]'
+                >
+                    ⬅️
                 </button>
-                <button onClick={handleNext} className=' bg-fuchsia-400 p-4 rounded-full hover:bg-fuchsia-400 active:bg-purple-500 w-[50px] h-[50px]'>
-                    {"→"}
+                <Swiper
+                    spaceBetween={15}
+                    slidesPerView={7}
+                    modules={[Navigation, Pagination]}
+                    ref={sliderRef}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 3,
+                        },
+                        768: {
+                            slidesPerView: 5,
+                        },
+                        1000: {
+                            slidesPerView: 6,
+                        },
+                        1280: {
+                            slidesPerView: 7,
+                        },
+                        1536: {
+                            slidesPerView: 11,
+                        },
+                    }}
+                    // pagination={{
+                    //     type: "fraction",
+                    //     // renderFraction: (index, className) => {
+                    //     //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    //     // }
+                    // }}
+                    // navigation={true}
+                    className="w-full"
+                    data-aos="fade-up"
+                >
+                    <SwiperSlide><TippedIcon size={75} iconId="react" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="nextjs" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="postgresql" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="docker" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="flutter" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="typescript" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="go" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="django" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="tailwind" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="nestjs" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="mongodb" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="redis" /></SwiperSlide>
+                    <SwiperSlide><TippedIcon size={75} iconId="midtrans" /></SwiperSlide>
+                </Swiper>
+                <button 
+                    onClick={handleNext} 
+                    className='text-3xl hover:scale-125 transition-all rounded-full active:bg-fuchsia-900
+                    invisible md:visible md:w-[50px] md:h-[50px]'>
+                    ➡️
+                </button>
+            </div>
+            <div className="flex flex-row justify-center gap-x-10 font-bold md:invisible md:h-0">
+                <button onClick={handlePrev} className='text-3xl hover:scale-125 transition-all rounded-full active:bg-fuchsia-900 w-[50px] h-[50px]'>
+                    ⬅️
+                </button>
+                <button onClick={handleNext} className='text-3xl hover:scale-125 transition-all rounded-full active:bg-fuchsia-900 w-[50px] h-[50px]'>
+                    ➡️
                 </button>
             </div>
         </>

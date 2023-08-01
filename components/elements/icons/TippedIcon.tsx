@@ -54,18 +54,34 @@ const ICONS:ICONS_DATA_TYPE = {
         'src': '/icons/technologies/docker.png',
         'tooltip': 'Docker'
     },
+    "nestjs": {
+        'src': '/icons/technologies/nestjs.png',
+        'tooltip': 'NestJS'
+    },
+    "mongodb": {
+        'src': '/icons/technologies/mongodb.png',
+        'tooltip': 'MongoDB'
+    },
+    "redis": {
+        'src': '/icons/technologies/redis.png',
+        'tooltip': 'Redis'
+    },
+    "midtrans": {
+        'src': '/icons/technologies/midtrans.png',
+        'tooltip': 'Midtrans API'
+    },
 }
 
 export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {    
     return(
         <>
-            <div className="hover:scale-[92%] shadow-sm">
+            <div className="hover:scale-[90%] transition-all shadow-md rounded-md">
                 <Image 
                     src={ICONS[iconId]["src"]}
                     width={size}
                     height={size}
-                    alt={`Veivel's tech/tool: ${iconId}`}
-                    className=" z-10"
+                    alt={`${iconId}`}
+                    className="z-10"
                 />
                 {/* <span className="tooltiptext">{ICONS[iconId]["tooltip"]}</span> */}
             </div>

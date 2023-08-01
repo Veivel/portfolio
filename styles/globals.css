@@ -186,7 +186,7 @@ Link, a:active {
   animation: reverse-move-old-underline-title-effect 0.35s ease 1 both;
   background: linear-gradient(to right, #a300c0, #d919fb);
   background-position: 0% 100%;
-  background-size: 100% 15%;
+  background-size: 100% 0%;
   background-repeat: no-repeat;
 }
 
@@ -201,13 +201,13 @@ Link, a:active {
     background-size: 100% 100%;
   }
   100% {
-      background-size: 100% 15%;
+      background-size: 100% 0%;
   }
 }
 
 @keyframes move-old-underline-title-effect {
   0% {
-      background-size: 100% 15%;
+      background-size: 100% 0%;
   }
   100% {
       background-size: 100% 100%;
@@ -223,7 +223,7 @@ Link, a:active {
 
 .shiny-2 {
   animation: 3.5s shine linear infinite;
-  background: linear-gradient(110deg, #ffffff 8%, #fce6ff 18%, #f3bdff 33%, #ffffff 92%);
+  background: linear-gradient(110deg, #ffffff 8%, #d8bfda 18%, #efa7ff 33%, #ffffff 92%);
   background-size: 200% 100%;
   background-clip: text;
 }

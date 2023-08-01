@@ -11,6 +11,10 @@ const SOCIALS:SOCIALS_DATA_TYPE = {
     "linkedin": {
         src:"/icons/socials/linkedin-white.png",
         href: "https://www.linkedin.com/in/veivel/"
+    },
+    "email": {
+        src:"/icons/socials/mail.svg",
+        href: "mailto:givarrel.veivel@ui.ac.id"
     }
 }
 
@@ -20,7 +24,7 @@ export default function Social({ size, iconId }: ICON_PROPS_TYPE) {
             <Link href={SOCIALS[iconId]['href']} target={"_blank"}>
                 <Image 
                     src={SOCIALS[iconId]['src']}
-                    alt={`icon to Veivel on ${iconId}`}
+                    alt={`${iconId}`}
                     width={size}
                     height={size}
                     className={styles.GlowOnHover}

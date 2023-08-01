@@ -13,7 +13,7 @@ export default function LetsConnect() {
     return(
         <>
             <div className="mx-auto w-[100%] md:w-[60%] text-center" data-aos="fade-up">
-                <h3>{"I'm always open for new challenges to conquer and new ideas to bring to life. Hit me up!"}</h3>
+                <h3>{"It all begins with a conversation – so let's spark something. My inbox and DMs are always open!"}</h3>
                 <br/>
                 <div className="flex flex-row justify-center">
                     <code className="bg-gray-700 p-3 rounded-l-lg"> 
@@ -30,6 +30,7 @@ export default function LetsConnect() {
                 <div className="flex flex-row my-6 space-x-4 justify-center">
                     <Social size={85} iconId="github" />
                     <Social size={85} iconId="linkedin" />
+                    <Social size={85} iconId="email" />
                 </div>
             </div>
         </>

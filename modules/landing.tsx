@@ -11,6 +11,7 @@ import Miscellaneous from "../components/sections/Miscellaneous";
 import LetsConnect from "../components/sections/LetsConnect";
 import Education from "../components/sections/Education";
 import Technologies from "../components/sections/Technologies";
+import Achievements from "../components/sections/Achievements";
 
 const Landing = () => {
     return(
@@ -26,7 +27,7 @@ const Landing = () => {
                     />
                 </div>
 
-                <div className="flex flex-col justify-center h-[90vh] md:h-screen" id="introduction">
+                <div className="" id="introduction">
                     <Introduction />
                 </div>
 
@@ -36,17 +37,22 @@ const Landing = () => {
                 </div>
 
                 <div className="space-y-8" id="projects">
-                    <Title>Projects</Title>
+                    <Title>{"Featured Projects"}</Title>
                     <Projects />
                 </div>
 
                 <div id="technologies">
-                    <Title>{"Technologies I've Used"}</Title>
+                    <Title>{"Technologies Used"}</Title>
                     <Technologies />
                 </div>
 
+                {/* <div id="achievements">
+                    <Title>Achievements</Title>
+                    <Achievements />
+                </div> */}
+
                 <div id="education">
-                    <Title>Education & Certifications</Title>
+                    <Title>Education</Title>
                     <Education />
                 </div>
 
