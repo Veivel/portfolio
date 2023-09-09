@@ -41,15 +41,15 @@ const Landing = () => {
                     <Projects />
                 </div>
 
+                <div id="achievements">
+                    <Title>Achievements</Title>
+                    <Achievements />
+                </div>
+
                 <div id="technologies">
                     <Title>{"Technologies Used"}</Title>
                     <Technologies />
                 </div>
-
-                {/* <div id="achievements">
-                    <Title>Achievements</Title>
-                    <Achievements />
-                </div> */}
 
                 <div id="education">
                     <Title>Education</Title>

@@ -54,7 +54,7 @@ export default function Projects() {
                     imgSrc="/content/apotech.png"
                     orientation="normal"
                 >
-                    <p>Our team{"'"}s entry to the web development category of IO Fest 2023, which won us 3rd place!</p>
+                    <p>Our team{"'"}s entry to the web development competition of IO Fest 2023, which won us 3rd place!</p>
                     <br/>
                     <p>
                         In accordance to the theme of Healthcare, Apotech is a 

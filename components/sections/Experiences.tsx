@@ -10,11 +10,11 @@ export default function Experiences() {
                 title="Software Engineer Intern @ UniLah"
                 period="June 2023 - Present"
                 technologies={["nestjs", "mongodb"]}
-                imgSrc="/placeholder.jpeg"
+                imgSrc="/content/unilah.png"
             >
-                <p>Collaborated with another engineer to design a MongoDB database required to build the company{"'"}s API.</p>
+                <p>Worked closely with another engineer to design a MongoDB database required to build the company{"'"}s API. I also collaborated with the team lead to implement email verification flows and bulk file imports on NestJS backend</p>
                 <br/>
-                <p>UniLah is a Malaysia-based startup focusing on a student app.</p>
+                <p>UniLah is a SEA-based startup focusing on a student app.</p>
 
                 {/* <LinksDiv>
                     <Link href="https://example.com">
@@ -33,7 +33,7 @@ export default function Experiences() {
             >
                 <p>Worked in a small of team 5 with Figma designs and a constantly-evolving backend.</p>
                 <br/>
-                <p>The startup in question is a future marketplace platform, where I was tasked to work on registration, landing, and an admin CMS.</p>
+                <p>The startup in question is an upcoming marketplace platform, where I was tasked to work on registration, landing, and an admin CMS.</p>
 
                 {/* <LinksDiv>
                     <Link href="https://example.com">
@@ -52,7 +52,7 @@ export default function Experiences() {
             >
                 <p>Worked in a team of 7 to translate Figma designs including registration and a functional course module into the BETIS website.</p>
                 <br/>
-                <p>BETIS is a program made by students from the Faculty of Computer Science in Universitas Indonesia to assist high-school students in preparation for their upcoming state college entrance exam.</p>
+                <p>BETIS is a student-run program from the Faculty of Computer Science in Universitas Indonesia to assist high-school students in preparation for their upcoming state college entrance exam.</p>
 
                 <LinksDiv>
                     <Link href="https://betis.cs.ui.ac.id/">

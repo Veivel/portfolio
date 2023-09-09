@@ -9,6 +9,7 @@ import Hamburger from '../components/layout/Hamburger'
 import Drawer from '../components/layout/Drawer'
 import Footer from '../components/layout/Footer'
 import Script from 'next/script'
+import CustomNav from '../components/layout/CustomNav'
 
 const personSchema = {
     "@context": "https://schema.org/",
@@ -65,6 +66,8 @@ export default function Home() {
 
             <Hamburger />
             <Drawer />
+            {/* <CustomNav /> */}
+            
             <Landing />
             <Footer />
         </>
