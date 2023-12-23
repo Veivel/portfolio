@@ -5,11 +5,11 @@ import { ICON_PROPS_TYPE, SOCIALS_DATA_TYPE } from "./types";
 
 const SOCIALS:SOCIALS_DATA_TYPE = {
     "github": {
-        src: "/icons/socials/github-white.png",
+        src: "/icons/socials/github-black.png",
         href: "https://github.com/veivel/",
     },
     "linkedin": {
-        src:"/icons/socials/linkedin-white.png",
+        src:"/icons/socials/linkedin-black.png",
         href: "https://www.linkedin.com/in/veivel/"
     },
     "email": {
@@ -28,7 +28,6 @@ export default function Social({ size, iconId }: ICON_PROPS_TYPE) {
                     width={size}
                     height={size}
                     className={styles.GlowOnHover}
-                    // className="hover:scale-[105%] hover:shadow-lg hover:shadow-blue-400"
                 />
             </Link>
         </>

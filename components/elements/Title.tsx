@@ -2,8 +2,8 @@ import { TITLE_PROPS_TYPE } from "./types";
 
 export default function Title({ children }: TITLE_PROPS_TYPE): JSX.Element {
     return (
-        <div className="title-effect w-fit px-2 mx-auto my-12">
-            <h1 className="text-center shiny-2 bg-clip-text text-transparent">
+        <div className="w-fit px-2 mx-auto my-8">
+            <h1 className="text-center bg-clip-text text-orange-500">
                 {children}
             </h1>
         </div>

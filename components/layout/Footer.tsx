@@ -3,16 +3,11 @@ import Link from "next/link";
 export default function Footer(): JSX.Element {
     return(
         <div 
-            className="bg-neutral-900 w-full px-12 py-4 rounded-t-lg"
+            className="w-full px-12 py-8 rounded-t-xl border border-gray-300 bg-neutral-50 h-fit"
             itemScope itemType="https://schema.org/WPFooter"
         >
-            <div className="w-full h-full flex flex-col md:flex-row justify-center text-neutral-100 md:space-x-16">
-                <div>
-                    <sub>{"Looks like you've reached the end."}</sub>
-                </div>
-                <div>
-                    <sub>© Veivel Pattiwael 2023.</sub>
-                </div>
+            <div className="w-full h-full flex flex-col justify-center text-center gap-2">
+                <p>© 2024 Veivel Pattiwael.</p>
             </div>
         </div>
     );

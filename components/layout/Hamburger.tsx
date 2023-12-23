@@ -11,7 +11,7 @@ export default function Hamburger(): JSX.Element {
             className="
                 fixed top-10 right-10 
                 hover:cursor-pointer z-[999] 
-                p-1 border-2 border-white rounded-full"
+                p-1 border-2 border-black rounded-full"
             itemScope itemType="https://schema.org/SiteNavigationElement"
         >
             <Fade toggled={isDrawerOpen} toggle={setDrawerOpen} />

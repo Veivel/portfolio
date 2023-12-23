@@ -46,7 +46,7 @@ export default function Home() {
                 <meta name="description" content="Givarrel Veivel Pattiwael's web portfolio — I do tech stuff. "/>
                 <meta name="author" content="Givarrel Veivel Pattiwael"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="keywords" content="Computer Science, Web development, Data science, Indonesia, Veivel"></meta>
+                <meta name="keywords" content="Computer Science, Software Engineer, Data Engineer, Indonesia, Veivel"></meta>
                 <link rel="icon" href="/code2.ico" />
             </Head>
 

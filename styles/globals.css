@@ -3,13 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('/Raleway.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Raleway-Black';
-  src: url('/Raleway-Black.ttf') format('truetype');
+  font-family: 'RobotoMono';
+  src: url('/Roboto-Mono.ttf') format('truetype');
 }
 
 /* ============== Paddings and stuff ============== */
@@ -66,99 +61,63 @@ main {
 }
 
 body {
-  background-color: rgb(25, 1, 1);
+  /* background-color: rgb(25, 1, 1); */
   /* background-image: url('/bg-2.svg'); */
+  /* color: white; */
   background-size: cover;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: small;
+  font-family: 'RobotoMono', sans-serif;
+  font-size: 14px;
+  font-weight: 350;
 }
 
-/* ============== below md =============== */
 
 h1 {
-  font-family: 'Raleway';
-  font-size: 2.6rem;
+  font-family: 'RobotoMono', sans-serif;
+  font-size: 3rem;
   font-variation-settings: "wght" 800;
 }
 
 h2 {
-  font-family: 'Raleway';
-  font-size: 1.2rem;
+  font-family: 'RobotoMono';
+  font-size: 1.5rem;
   font-variation-settings: "wght" 600;
 }
 
 h3 {
-    font-family: 'Raleway';
-    font-size: medium;
+    font-family: 'RobotoMono';
+    font-size: 1rem;
     font-variation-settings: "wght" 500;
 }
 
 h4 {
-  font-family: 'Raleway';
-  font-size: small;
+  font-family: 'RobotoMono';
+  font-size: 1rem;
   font-variation-settings: "wght" 500;
 }
 
 sub {
   font-size: small;
-  font-variation-settings: "wght" 100;
-}
-
-/* ============== MD screens =============== */
-
-@media (min-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
-  h1 {
-    font-size: 2.85rem;
-  }
-  h2 {
-    font-size: larger;
-  }
-  h3 {
-    font-size: medium;
-  }
-  h4 {
-    font-size: 0.9rem;
-  }
+  font-variation-settings: "wght" 300;
 }
 
 /* ============== XL screens =============== */
 
-@media (min-width: 1280px) {
-  body {
-    font-size: medium;
-  }
-  h1 {
-    font-size: 3.1rem;
-  }
-  h2 {
-    font-size: x-large;
-  }
-  h3 {
-    font-size: large;
-  }
-  h4 {
-    font-size: medium;
-  }
+/* body {
+  font-size: medium;
 }
-
-/* ============== 2XL screens =============== */
-
-@media (min-width: 1536px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: xx-large;
-  }
-  h3 {
-    font-size: larger;
-  }
+h1 {
+  font-size: 3.1rem;
 }
+h2 {
+  font-size: x-large;
+}
+h3 {
+  font-size: large;
+}
+h4 {
+  font-size: medium;
+} */
+
 
 /* Lists & Paragraphs */
 
@@ -168,6 +127,11 @@ ul {
 }
 
 /* Links, Images, etc. */
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 Link, a {
   color:cornflowerblue;
@@ -181,62 +145,25 @@ Link, a:active {
   color: blue;
 }
 
-.title-effect {
-  transition: transform 0.35s ease-out;
-  animation: reverse-move-old-underline-title-effect 0.35s ease 1 both;
-  background: linear-gradient(to right, #a300c0, #d919fb);
-  background-position: 0% 100%;
-  background-size: 100% 0%;
-  background-repeat: no-repeat;
+.special-underline {
+  position: relative;
+  text-decoration: none;
 }
 
-.title-effect:hover {
-  transition: transform 0.35s ease-out;
-  animation: move-old-underline-title-effect 0.35s ease 1 both;
-  background-size: 100% 100%;
+.special-underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.15em;
+  bottom: 0.0em;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-in-out;
 }
 
-@keyframes reverse-move-old-underline-title-effect {
-  0% {
-    background-size: 100% 100%;
-  }
-  100% {
-      background-size: 100% 0%;
-  }
-}
-
-@keyframes move-old-underline-title-effect {
-  0% {
-      background-size: 100% 0%;
-  }
-  100% {
-      background-size: 100% 100%;
-  }
-}
-
-.shiny-1 {
-  animation: 2.25s shine linear infinite;
-  background: linear-gradient(110deg, #f2acff 8%, #e656ff 18%, #d919fb 33%, #f2acff 92%);
-  background-size: 200% 100%;
-  background-clip: text;
-}
-
-.shiny-2 {
-  animation: 3.5s shine linear infinite;
-  background: linear-gradient(110deg, #ffffff 8%, #d8bfda 18%, #efa7ff 33%, #ffffff 92%);
-  background-size: 200% 100%;
-  background-clip: text;
-}
-
-.shiny-bg {
-  animation: 2.25s shine linear infinite;
-  background: linear-gradient(110deg, #f2acff 8%, #e656ff 18%, #d919fb 33%, #f2acff 92%);
-  background-size: 200% 100%;
-  background-clip: text;
-}
-
-@keyframes shine {
-  to {
-    background-position-x: -200%;
-  }
+.special-underline:hover::before {
+  transform: scaleX(1);
 }

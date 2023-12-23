@@ -11,18 +11,25 @@ export default function Introduction(): JSX.Element {
     return(
         <>
             <div className="flex flex-col justify-center w-full h-screen">
-                <div className="flex flex-col my-auto">
-                    <h1 className="text-white" data-aos="fade-right">
+                <div className="flex flex-col my-auto text-center">
+                    <h1 className="" data-aos="fade-right">
                         {"Hi, I'm "}
-                        <span className="text-transparent bg-clip-text shiny-1">Veivel</span>
-                        {"!"}
+                        <span className="text-orange-500">Veivel</span>
+                        {"! ✌️"}
+                        
                     </h1>
-                    <h2 className="text-fuchsia-400 w-[75%]" data-aos="fade-up">
-                        {"A tech guy who's always up for a new challenge and constantly looking for new ways to create impact in the world."} ✌️
-                    </h2>
+                    <hr className="my-2 md:my-6 mx-[25%]" />
+                    <h3 className="md:w-[85%] lg:w-[75%] mx-auto inline" data-aos="fade-up">
+                        <span> A software engineer who is always exploring and 
+                            learning how to better build </span>
+                        <p className="text-orange-500 inline special-underline">impactful products</p>
+                        <span> and bring </span>
+                        <p className="text-orange-500 inline special-underline">potent ideas</p>
+                        <span> to life. </span>
+                    </h3>
                 </div>
                 <button 
-                    className="text-3xl font-bold hover:text-fuchsia-300 hover:scale-125 transition-all justify-self-end my-2 md:my-4"
+                    className="text-3xl font-bold text-fuchsia-700 hover:scale-125 transition-all justify-self-end my-2 md:my-4"
                     onClick={e => handleDownButton()}
                 >
                     ⬇️

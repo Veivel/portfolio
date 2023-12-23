@@ -1,5 +1,5 @@
 .GlowOnHover:hover {
-    -webkit-filter: drop-shadow(0 0 8px #9a63f8);
-    filter: drop-shadow(0 0 8px #9a63f8);
-    transform: scale(1.04);
+    /* -webkit-filter: drop-shadow(0 0 8px #9a63f8); */
+    /* filter: drop-shadow(0 0 8px #9a63f8); */
+    transform: scale(1.02);
 }

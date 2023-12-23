@@ -15,15 +15,15 @@ export default function LetsConnect() {
             <div className="mx-auto w-[100%] md:w-[60%] text-center" data-aos="fade-up">
                 <h3>{"It all begins with a conversation – so let's spark something. My inbox and DMs are always open!"}</h3>
                 <br/>
-                <div className="flex flex-row justify-center">
-                    <code className="bg-gray-700 p-3 rounded-l-lg"> 
-                        {process.env.NEXT_PUBLIC_EMAIL_ADDRESS}
+                <div className="flex flex-row justify-center border border-gray-300 rounded-lg w-fit mx-auto">
+                    <code className="bg-gray-50 p-3 rounded-l-lg"> 
+                        givarrel.veivel [at] ui.ac.id
                     </code>
                     <button 
                         onClick={e => handleCopy()}
-                        className="bg-gray-600 p-3 hover:bg-gray-800 active:bg-black rounded-r-lg"
+                        className="bg-gray-100 p-3 hover:bg-gray-200 active:bg-gray-400 rounded-r-lg"
                     >
-                        <Clipboard />
+                        <Clipboard/>
                     </button>
                 </div>
                 <p className=" font-medium text-xs mt-4" >{note}</p>

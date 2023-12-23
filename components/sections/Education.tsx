@@ -6,7 +6,10 @@ export default function Education():JSX.Element {
         <>
             <div data-aos="fade-up">
                 <h2>Computer Science Undergraduate @ Universitas Indonesia</h2>
-                <p>2021 - 2025 (expected)</p>
+                <p>Aug 2021 - Aug 2025 (expected)</p>
+                <br/>
+                <h2>AUN-ACTs Exchange Student @ National University of Singapore </h2>
+                <p>Jan 2024 - May 2024 (expected)</p>
                 <br />
                 {/* <h2>Google Data Analytics Professional Certificate</h2>
                 <p>2022 - <Link href="/">Credentials <Ext/> </Link></p> */}

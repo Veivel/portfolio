@@ -75,7 +75,7 @@ const ICONS:ICONS_DATA_TYPE = {
 export default function TippedIcon({ size, iconId }: ICON_PROPS_TYPE) {    
     return(
         <>
-            <div className="hover:scale-[90%] transition-all shadow-md rounded-md">
+            <div className="hover:scale-[110%] transition-all rounded-md">
                 <Image 
                     src={ICONS[iconId]["src"]}
                     width={size}

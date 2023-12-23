@@ -27,12 +27,12 @@ export default function Drawer(): JSX.Element {
             { isDrawerOpen ? 
                 <div className={
                     `fixed left-0 top-0 [z-index: 100] flex flex-col z-50 w-[65%] md:w-[55%] lg:w-[50%] xl:w-[40%] 2xl:w-[30%] h-screen
-                    shadow-md 
+                    border border-gray-400
                     ${styles.MenuWrapper}`
                 } itemScope itemType="https://schema.org/WPSideBar"
                 >
                     <div className="
-                        bg-neutral-100 text-black w-full h-full space-y-10 pb-1/4 pt-1/4 shadow-2xl 
+                        bg-neutral-100 text-black w-full h-full space-y-10 pb-1/4 pt-1/4
                         flex flex-col justify-center text-center"
                     >
                         {Object.keys(SECTIONS).map((section, idx) => (

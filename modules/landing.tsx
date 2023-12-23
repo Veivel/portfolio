@@ -17,7 +17,7 @@ const Landing = () => {
     return(
         <>
             <main>
-                <div className="collapse absolute md:visible md:right-4 md:-top-[16rem] lg:-top-[8rem] xl:-top-[6rem] xl:right-16 2xl:right-48">
+                {/* <div className="collapse absolute md:visible md:right-4 md:-top-[16rem] lg:-top-[8rem] xl:-top-[6rem] xl:right-16 2xl:right-48">
                     <Image 
                         src={"/betterbulb.png"}
                         width={200}
@@ -25,7 +25,7 @@ const Landing = () => {
                         alt="veivel's toggleable bulb"
                         className="opacity-100"
                     />
-                </div>
+                </div> */}
 
                 <div className="" id="introduction">
                     <Introduction />
@@ -63,7 +63,7 @@ const Landing = () => {
 
                 <div className="mb-36" id="letsconnect">
                     <Title>
-                        {"Let's "}<span className="text-fuchsia-300 inline">connect.</span>
+                        {"Let's "}<span className="text-orange-600 inline special-underline">connect</span>.
                     </Title>
                     <LetsConnect />
                 </div>
