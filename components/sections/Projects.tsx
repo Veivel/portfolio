@@ -9,7 +9,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-8 md:gap-y-2">
                 <ProjectCard
                     title="SQL Autograder @ Data Analytics Dash"
-                    status="Work In Progress"
+                    status="Completed"
                     technologies={["go", "postgresql", "redis"]}
                     imgSrc="/content/dad.png"
                     orientation="normal"
@@ -21,9 +21,9 @@ export default function Projects() {
                     <br/>
                     <p>
                         Data Analytics Dash is a new competition by COMPFEST 15 with 
-                        a preliminary stage focused on testing contestants{"'"} querying 
-                        skills on PostgreSQL. For this, we provide a platform for all the
-                        questions and submissions.
+                        a preliminary stage focused on testing your querying 
+                        skills with SQL. For this, we provided a platform a 
+                        HackerRank-esque platform.
                     </p>
 
                     <LinksDiv>
@@ -57,7 +57,7 @@ export default function Projects() {
                     <p>Our team{"'"}s entry to the web development competition of IO Fest 2023, which won us 3rd place!</p>
                     <br/>
                     <p>
-                        In accordance to the theme of Healthcare, Apotech is a 
+                        Aligned with the theme of Healthcare, Apotech is a 
                         direct-to-consumer independent pharmacy management system integrated with Midtrans (an Indonesian payment gateway).
                         Our team of 3 developed this within two weeks.
                     </p>

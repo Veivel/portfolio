@@ -30,6 +30,17 @@ export default function Achievements():JSX.Element {
                     <h2><u>1st place</u> in Technoscape Hackathon 6.0</h2>
                     <p>National university-level hackathon lasting 36 hours by Universitas Bina Nusantara (2023)</p>
                 </SquareCard>
+                <SquareCard>
+                    <Image 
+                        src="/content/srifoton.webp"
+                        width={75}
+                        height={75}
+                        alt="hello"
+                        className="mx-auto w-[75px] h-[60px] rounded-md"
+                    />
+                    <h2><u>1st place</u> in SRIFOTON Web Development Category</h2>
+                    <p>National university-level web development competition by Universitas Sriwijaya (2023)</p>
+                </SquareCard>
             </div>
         </>
     );

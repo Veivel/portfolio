@@ -12,9 +12,13 @@ export default function LetsConnect() {
 
     return(
         <>
-            <div className="mx-auto w-[100%] md:w-[60%] text-center" data-aos="fade-up">
-                <h3>{"It all begins with a conversation – so let's spark something. My inbox and DMs are always open!"}</h3>
-                <br/>
+            <div className="mx-auto sm:w-[80%] md:w-[60%] lg:w-[60%] text-center" data-aos="fade-up">
+                <h3 className="mb-2">
+                    <span>It all </span> 
+                    <p className="text-orange-500 inline special-underline">{"begins with a conversation"}</p>
+                    <span>. My inbox is always open, so don{"'"}t hesitate to contact me {":)"}</span>
+                </h3>
+                <br />
                 <div className="flex flex-row justify-center border border-gray-300 rounded-lg w-fit mx-auto">
                     <code className="bg-gray-50 p-3 rounded-l-lg"> 
                         givarrel.veivel [at] ui.ac.id

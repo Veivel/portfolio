@@ -63,7 +63,7 @@ const Landing = () => {
 
                 <div className="mb-36" id="letsconnect">
                     <Title>
-                        {"Let's "}<span className="text-orange-600 inline special-underline">connect</span>.
+                        {"Let's "}<span className=" text-amber-700 inline">connect</span>.
                     </Title>
                     <LetsConnect />
                 </div>

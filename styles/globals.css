@@ -145,6 +145,7 @@ Link, a:active {
   color: blue;
 }
 
+/* credit: tobiasahlin.com/blog/css-trick-animating-link-underlines */
 .special-underline {
   position: relative;
   text-decoration: none;

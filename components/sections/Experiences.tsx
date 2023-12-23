@@ -8,7 +8,7 @@ export default function Experiences() {
         <div className="grid md:grid-cols-2 gap-4">
             <WorkCard
                 title="Software Engineer Intern @ UniLah"
-                period="June 2023 - Present"
+                period="June 2023 - Sep 2023"
                 technologies={["nestjs", "mongodb"]}
                 imgSrc="/content/unilah.png"
             >

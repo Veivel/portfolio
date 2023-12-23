@@ -1,6 +1,7 @@
 export type ICON_PROPS_TYPE = {
     size: number
     iconId: string
+    className?: string
 }
 
 export type SOCIALS_DATA_TYPE = {
