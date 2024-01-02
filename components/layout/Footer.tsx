@@ -7,6 +7,7 @@ export default function Footer(): JSX.Element {
             itemScope itemType="https://schema.org/WPFooter"
         >
             <div className="w-full h-full flex flex-col justify-center text-center gap-2">
+                <p>built with nextJS 🙂 – <Link href={"https://github.com/veivel/portfolio"}>github</Link></p>
                 <p>© 2024 Veivel Pattiwael.</p>
             </div>
         </div>

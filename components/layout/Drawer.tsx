@@ -32,7 +32,7 @@ export default function Drawer(): JSX.Element {
                 } itemScope itemType="https://schema.org/WPSideBar"
                 >
                     <div className="
-                        bg-neutral-100 text-black w-full h-full space-y-10 pb-1/4 pt-1/4
+                        bg-neutral-50 text-black w-full h-full space-y-10 pb-1/4 pt-1/4
                         flex flex-col justify-center text-center"
                     >
                         {Object.keys(SECTIONS).map((section, idx) => (

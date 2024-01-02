@@ -9,7 +9,7 @@ export default function Education():JSX.Element {
                 <p>Aug 2021 - Aug 2025 (expected)</p>
                 <br/>
                 <h2>AUN-ACTs Exchange Student @ National University of Singapore </h2>
-                <p>Jan 2024 - May 2024 (expected)</p>
+                <p>Jan 2024 - May 2024</p>
                 <br />
                 {/* <h2>Google Data Analytics Professional Certificate</h2>
                 <p>2022 - <Link href="/">Credentials <Ext/> </Link></p> */}

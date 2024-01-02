@@ -15,7 +15,7 @@ export default function LetsConnect() {
             <div className="mx-auto sm:w-[80%] md:w-[60%] lg:w-[60%] text-center" data-aos="fade-up">
                 <h3 className="mb-2">
                     <span>It all </span> 
-                    <p className="text-orange-500 inline special-underline">{"begins with a conversation"}</p>
+                    <p className="text-primary inline special-underline">{"begins with a conversation"}</p>
                     <span>. My inbox is always open, so don{"'"}t hesitate to contact me {":)"}</span>
                 </h3>
                 <br />

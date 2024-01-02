@@ -14,7 +14,7 @@ export default function Introduction(): JSX.Element {
                 <div className="flex flex-col my-auto text-center">
                     <h1 className="" data-aos="fade-right">
                         {"Hi, I'm "}
-                        <span className="text-orange-500 special-underline">Veivel</span>
+                        <span className="text-primary special-underline">Veivel</span>
                         {"! ✌️"}
                         
                     </h1>
@@ -22,9 +22,9 @@ export default function Introduction(): JSX.Element {
                     <h3 className="md:w-[85%] lg:w-[75%] mx-auto inline" data-aos="fade-up">
                         <span> A software engineer who is always exploring and 
                             learning how to better build </span>
-                        <p className="text-orange-500 inline special-underline">impactful products</p>
+                        <p className="text-primary inline special-underline">impactful products</p>
                         <span> and bring </span>
-                        <p className="text-orange-500 inline special-underline">potent ideas</p>
+                        <p className="text-primary inline special-underline">potent ideas</p>
                         <span> to life. </span>
                     </h3>
                 </div>

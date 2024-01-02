@@ -42,7 +42,7 @@ const Landing = () => {
                 </div>
 
                 <div id="achievements">
-                    <Title>Achievements</Title>
+                    <Title>Accomplishments</Title>
                     <Achievements />
                 </div>
 
@@ -63,7 +63,7 @@ const Landing = () => {
 
                 <div className="mb-36" id="letsconnect">
                     <Title>
-                        {"Let's "}<span className=" text-amber-700 inline">connect</span>.
+                        {"Let's "} connect!
                     </Title>
                     <LetsConnect />
                 </div>
