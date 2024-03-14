@@ -2,6 +2,7 @@ export type CARD_PROPS_TYPE = {
     children: any
     imgSrc: string
     orientation? : "left" | "right" | "normal"
+    className?: string
 }
 
 export type SQUARE_CARD_PROPS_TYPE = {

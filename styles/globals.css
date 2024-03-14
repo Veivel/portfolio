@@ -168,3 +168,39 @@ Link, a:active {
 .special-underline:hover::before {
   transform: scaleX(1);
 }
+
+/* credit: https://freefrontend.com/css-border-animations/ */
+.special-border {
+  transition: border-color 2s ease;
+  border: solid 2px rgb(229 231 235);
+}
+
+.special-border:hover {
+  --border-angle: 0.115turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255) 5%,
+      rgb(255, 255, 255) 60%,
+      rgb(255, 255, 255) 95%
+    );
+  border: solid 2px transparent;
+  --gradient-border: conic-gradient(from var(--border-angle), rgb(229 231 235) 25%, rgb(229 231 235), #A72CC9 99%, transparent);
+  background: 
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box, 
+    var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 2s ease-in-out 1;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1.115turn;
+    }
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
