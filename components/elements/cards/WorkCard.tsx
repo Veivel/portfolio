@@ -7,7 +7,7 @@ import { WORK_PROPS_TYPE } from "./types";
 
 export default function WorkCard({ title, period, technologies, children, imgSrc }: WORK_PROPS_TYPE): JSX.Element {
     return(
-        <Card imgSrc={imgSrc}>
+        <Card>
             <div className="flex flex-col justify-between">
                 <h2><Balancer>{title}</Balancer></h2>
                 <sub className="mt-2 mb-4">{period}</sub>

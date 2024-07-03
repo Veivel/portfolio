@@ -15,7 +15,7 @@ const CardImage = (props: any) => (
     </div>
 );
 
-export default function Card({ children, imgSrc, orientation, className }: CARD_PROPS_TYPE): JSX.Element {
+export default function Card({ children, orientation, className }: CARD_PROPS_TYPE): JSX.Element {
     const minimumLg = useMediaQuery('(min-width: 1024px)');
 
     return(
@@ -23,7 +23,6 @@ export default function Card({ children, imgSrc, orientation, className }: CARD_
         ${className} block w-full h-full relative rounded-xl bg-[rgb(255,252,249)] text-black border
         transform transition-transform duration-300 hover:scale-105 hover:border-black
         `} data-aos="fade-up">
-            <CardImage src={imgSrc} />
             <div className="px-6 py-4">
                 {children}
             </div>
