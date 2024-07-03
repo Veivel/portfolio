@@ -27,46 +27,46 @@ const Landing = () => {
                     />
                 </div> */}
 
-                <div className="" id="introduction">
+                <section className="" id="introduction">
                     <Introduction />
-                </div>
+                </section>
 
-                <div id="experiences">
+                <section id="experiences">
                     <Title>{"Things I Did"}</Title>
                     <Experiences />
-                </div>
+                </section>
 
-                <div className="space-y-8" id="projects">
+                <section className="space-y-8" id="projects">
                     <Title>{"Selected Works"}</Title>
                     <Projects />
-                </div>
+                </section>
 
-                <div id="achievements">
+                <section id="achievements">
                     <Title>My Recent Achievements</Title>
                     <Achievements />
-                </div>
+                </section>
 
-                <div id="technologies">
+                <section id="technologies">
                     <Title>{"Things I've Used"}</Title>
                     <Technologies />
-                </div>
+                </section>
 
-                <div id="education">
+                <section id="education">
                     <Title>The Journey So Far</Title>
                     <Education />
-                </div>
+                </section>
 
-                {/* <div id="misc">
+                {/* <section id="misc">
                     <Title>Miscellaneous...</Title>
                     <Miscellaneous />
-                </div> */}
+                </section> */}
 
-                <div className="mb-36" id="letsconnect">
+                <section className="mb-36" id="letsconnect">
                     <Title>
                         Let{"'"}s connect!
                     </Title>
                     <LetsConnect />
-                </div>
+                </section>
             </main>
         </>
     );
