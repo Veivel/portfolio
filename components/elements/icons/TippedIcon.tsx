@@ -70,12 +70,16 @@ const ICONS:ICONS_DATA_TYPE = {
         'src': '/icons/technologies/midtrans.png',
         'tooltip': 'Midtrans API'
     },
+    "linux": {
+        'src': '/icons/technologies/linux.png',
+        'tooltip': 'Linux'
+    }
 }
 
 export default function TippedIcon({ size, iconId, className }: ICON_PROPS_TYPE) {    
     return(
         <>
-            <div className={`${className} hover:scale-[110%] transition-all rounded-2xl border border-gray-300 col-span-1`}>
+            <div className={`${className} hover:scale-[110%] transition-all rounded-lg border border-gray-300 col-span-1 tooltip`}>
                 <Image 
                     src={ICONS[iconId]["src"]}
                     width={size}
@@ -83,7 +87,7 @@ export default function TippedIcon({ size, iconId, className }: ICON_PROPS_TYPE)
                     alt={`${iconId}`}
                     className="z-10"
                 />
-                {/* <span className="tooltiptext">{ICONS[iconId]["tooltip"]}</span> */}
+                <span className="tooltiptext">{ICONS[iconId]["tooltip"]}</span>
             </div>
         </>
     );

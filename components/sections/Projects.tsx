@@ -10,7 +10,7 @@ export default function Projects() {
                 <ProjectCard
                     title="SQL Autograder @ Data Analytics Dash"
                     status="Completed"
-                    technologies={["go", "postgresql", "redis"]}
+                    technologies={["go", "postgresql", "redis", "linux", "docker"]}
                     imgSrc="/content/dad.png"
                     orientation="normal"
                 >
@@ -32,21 +32,6 @@ export default function Projects() {
                     </LinksDiv>
                 </ProjectCard>
 
-                {/* <ProjectCard
-                    title="Monsieur Rezan's Website"
-                    status="Work In Progress"
-                    technologies={["nextjs", "tailwind", "docker", "strapi"]}
-                    imgSrc="/content/msrrez.png"
-                    orientation="normal"
-                >
-                    <p>Created a full-stack website for my first ever client: language tutor and content creator Monsieur Rezan using NextJS and Strapi.</p>
-
-                    <LinksDiv>
-                        <Link href="https://github.com/veivel/monsieurrezan.com">Frontend <Ext /></Link>
-                        <Link href="https://github.com/veivel/monsieurrezan-backend">Backend <Ext /></Link>
-                    </LinksDiv>
-                </ProjectCard> */}
-
                 <ProjectCard
                     title="Apotech"
                     status="Completed"
@@ -67,21 +52,23 @@ export default function Projects() {
                     </LinksDiv>
                 </ProjectCard>
 
-                <ProjectCard
-                    title="Flashcards"
+                {/* <ProjectCard
+                    title="YOKOGAWA Charity Run"
                     status="Completed"
-                    technologies={["react"]}
+                    technologies={["nextjs", "tailwind", "midtrans"]}
                     imgSrc="/content/flashcards.png"
                     orientation="normal"
                 >
-                    <p>A fully functional flashcard/quiz web app utilizing Redux; my first ever React project.</p>
+                    <p>A landing page and e-ticketing system for a charity run hosted by YOKOGAWA and FMIPA UI. 
+                        The e-ticketing system allows for user sign-in via Google and payment with QRIS via Midtrans.
+                    </p>
                     <LinksDiv>
                         <Link href="https://youraverageflashcards.netlify.app/">Deployment <Ext /></Link>
                         <Link href="https://github.com/veivel/flashcards">Repository <Ext /></Link>
                     </LinksDiv>
-                </ProjectCard>
+                </ProjectCard> */}
 
-                <ProjectCard
+                {/* <ProjectCard
                     title="Scrap.py"
                     status="Completed"
                     technologies={["django", "python", "flutter"]}
@@ -96,7 +83,7 @@ export default function Projects() {
                         <Link href="https://github.com/veivel/scrap.py">Repo (Web)<Ext /></Link>
                         <Link href="https://github.com/arkanalexei/scrap.py-mobile">Repo(Mobile)<Ext /></Link>
                     </LinksDiv>
-                </ProjectCard>
+                </ProjectCard> */}
             </div>
         </>
     );

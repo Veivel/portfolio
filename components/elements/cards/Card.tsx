@@ -3,7 +3,7 @@ import useMediaQuery from "../../utils/useMediaQuery";
 import { CARD_PROPS_TYPE } from "./types";
 
 const CardImage = (props: any) => (
-    <div className={props.left || props.right ? "w-[50%] relative" : "w-full h-[250px] relative"}>
+    <div className={props.left || props.right ? "w-[50%] relative" : "w-full h-max max-h-[250px] relative"}>
         <Image 
             src={props.src}
             className={props.left ? "rounded-l-xl" : props.right ? "rounded-r-xl" : "rounded-t-xl"}
@@ -18,29 +18,15 @@ const CardImage = (props: any) => (
 export default function Card({ children, imgSrc, orientation, className }: CARD_PROPS_TYPE): JSX.Element {
     const minimumLg = useMediaQuery('(min-width: 1024px)');
 
-    if (minimumLg && (orientation === "left" || orientation === "right")) {
-        return(
-            <div className={`
-                ${className} special-border w-full rounded-2xl bg-white text-black 
-                flex flex-row md:h-[350px] xl:h-[380px]
-            `} data-aos="fade-up">
-                { orientation === "left" ? <CardImage left src={imgSrc} /> : <></> }
-                <div className="px-6 py-4 w-[50%]">
-                    {children}
-                </div>
-                { orientation === "right" ? <CardImage right src={imgSrc} /> : <></> }
+    return(
+        <div className={`
+        ${className} block w-full h-full relative rounded-xl bg-[rgb(255,252,249)] text-black border
+        transform transition-transform duration-300 hover:scale-105 hover:border-black
+        `} data-aos="fade-up">
+            <CardImage src={imgSrc} />
+            <div className="px-6 py-4">
+                {children}
             </div>
-        );
-    } else {
-        return(
-            <div className={`
-            ${className} special-border w-full rounded-2xl bg-white text-black
-            `} data-aos="fade-up">
-                <CardImage src={imgSrc} />
-                <div className="px-6 py-4">
-                    {children}
-                </div>
-            </div>
-        );
-    }
+        </div>
+    );
 }

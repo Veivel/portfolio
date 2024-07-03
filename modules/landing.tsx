@@ -32,27 +32,27 @@ const Landing = () => {
                 </div>
 
                 <div id="experiences">
-                    <Title>{"My Experiences"}</Title>
+                    <Title>{"Things I Did"}</Title>
                     <Experiences />
                 </div>
 
                 <div className="space-y-8" id="projects">
-                    <Title>{"Featured Projects"}</Title>
+                    <Title>{"Selected Works"}</Title>
                     <Projects />
                 </div>
 
                 <div id="achievements">
-                    <Title>Accomplishments</Title>
+                    <Title>My Recent Achievements</Title>
                     <Achievements />
                 </div>
 
                 <div id="technologies">
-                    <Title>{"Technologies Used"}</Title>
+                    <Title>{"Things I've Used"}</Title>
                     <Technologies />
                 </div>
 
                 <div id="education">
-                    <Title>Education</Title>
+                    <Title>The Journey So Far</Title>
                     <Education />
                 </div>
 
@@ -63,7 +63,7 @@ const Landing = () => {
 
                 <div className="mb-36" id="letsconnect">
                     <Title>
-                        {"Let's "} connect!
+                        Let{"'"}s connect!
                     </Title>
                     <LetsConnect />
                 </div>

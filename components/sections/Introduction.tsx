@@ -10,9 +10,9 @@ export default function Introduction(): JSX.Element {
 
     return(
         <>
-            <div className="flex flex-col justify-center w-full h-screen">
+            <div className="flex flex-col justify-center w-full h-[90vh]">
                 <div className="flex flex-col my-auto text-center">
-                    <h1 className="" data-aos="fade-right">
+                    <h1 className="text-center" data-aos="fade-right">
                         {"Hi, I'm "}
                         <span className="text-primary special-underline">Veivel</span>
                         {"! ✌️"}
@@ -27,12 +27,23 @@ export default function Introduction(): JSX.Element {
                         <p className="text-primary inline special-underline">potent ideas</p>
                         <span> to life. </span>
                     </h3>
+                    <br/>
+                    <a 
+                        data-aos="fade-up" 
+                        className="py-3 px-2 rounded-sm bg-fuchsia-600 w-fit ml-auto mr-auto text-white
+                        hover:bg-fuchsia-700 transition-colors hover:no-underline hover:text-cyan-200
+                        hover:hue-rotate-15
+                        "
+                        href="https://blog.veivelp.com"
+                    >
+                        Psst. Read my blog!
+                    </a>
                 </div>
                 <button 
                     className="text-3xl font-bold text-fuchsia-700 hover:scale-125 transition-all justify-self-end my-2 md:my-4"
                     onClick={e => handleDownButton()}
                 >
-                    ⬇️
+                    ⬇
                 </button>
             </div>
         </>

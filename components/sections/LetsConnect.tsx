@@ -19,7 +19,7 @@ export default function LetsConnect() {
                     <span>. My inbox is always open, so don{"'"}t hesitate to contact me {":)"}</span>
                 </h3>
                 <br />
-                <div className="flex flex-row justify-center border border-gray-300 rounded-lg w-fit mx-auto">
+                <div className="flex flex-row justify-center border border-gray-300 rounded-md w-fit mx-auto">
                     <code className="bg-gray-50 p-3 rounded-l-lg"> 
                         givarrel.veivel [at] ui.ac.id
                     </code>

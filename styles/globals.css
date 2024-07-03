@@ -14,50 +14,10 @@ main {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   overflow: hidden;
-}
-
-/* sm */
-@media (min-width: 640px) {
-  main {
-    padding-top: 0rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-
-/* md */
-@media (min-width: 768px) {
-  main {
-    padding-top: 0rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-
-/* xl */
-@media (min-width: 1280px) { 
-  main {
-    padding-top: 0rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
-  }
-}
-
-/* 2xl */
-@media (min-width: 1536px) { 
-  main {
-    padding-top: 4rem;
-    padding-left: 24rem;
-    padding-right: 24rem;
-  }
-}
-
-@media (min-width: 2000px) { 
-  main {
-    padding-top: 6rem;
-    padding-left: 32rem;
-    padding-right: 32rem;
-  }
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 253, 245);
 }
 
 body {
@@ -75,6 +35,7 @@ h1 {
   font-family: 'RobotoMono', sans-serif;
   font-size: 3rem;
   font-variation-settings: "wght" 800;
+  text-align: start;
 }
 
 h2 {
@@ -99,25 +60,6 @@ sub {
   font-size: small;
   font-variation-settings: "wght" 300;
 }
-
-/* ============== XL screens =============== */
-
-/* body {
-  font-size: medium;
-}
-h1 {
-  font-size: 3.1rem;
-}
-h2 {
-  font-size: x-large;
-}
-h3 {
-  font-size: large;
-}
-h4 {
-  font-size: medium;
-} */
-
 
 /* Lists & Paragraphs */
 
@@ -169,38 +111,39 @@ Link, a:active {
   transform: scaleX(1);
 }
 
-/* credit: https://freefrontend.com/css-border-animations/ */
-.special-border {
-  transition: border-color 2s ease;
-  border: solid 2px rgb(229 231 235);
+/* .special-card {
+  border: rgb(185, 185, 185) 1px solid;
+  transition: transform 1s;
 }
 
-.special-border:hover {
-  --border-angle: 0.115turn;
-  --main-bg: conic-gradient(
-      from var(--border-angle),
-      rgb(255, 255, 255),
-      rgb(255, 255, 255) 5%,
-      rgb(255, 255, 255) 60%,
-      rgb(255, 255, 255) 95%
-    );
-  border: solid 2px transparent;
-  --gradient-border: conic-gradient(from var(--border-angle), rgb(229 231 235) 25%, rgb(229 231 235), #A72CC9 99%, transparent);
-  background: 
-    var(--main-bg) padding-box,
-    var(--gradient-border) border-box, 
-    var(--main-bg) border-box;
-  background-position: center center;
-  animation: bg-spin 2s ease-in-out 1;
-  @keyframes bg-spin {
-    to {
-      --border-angle: 1.115turn;
-    }
-  }
+.special-card:hover {
+  transform: translate(-6px, -6px);
+} */
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(240, 240, 240, 0.9);
+  color: black;
+  text-align: start;
+  padding: 4px 4px;
+  border-radius: 4px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 100;
+  left: -5px;
+  top: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

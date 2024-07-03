@@ -11,12 +11,10 @@ export default function Technologies():JSX.Element {
     return(
         <>
             <div className="flex flex-col md:flex-row justify-center gap-x-8 items-center">
-                <div className='grid grid-cols-6 gap-8 place-content-center'>
-                    <TippedIcon size={75} iconId="react" />
+                <div className='grid grid-cols-5 gap-8 place-content-center'>
                     <TippedIcon size={75} iconId="nextjs" />
                     <TippedIcon size={75} iconId="postgresql" />
                     <TippedIcon size={75} iconId="docker" />
-                    <TippedIcon size={75} iconId="flutter" />
                     <TippedIcon size={75} iconId="typescript" />
                     <TippedIcon size={75} iconId="go" />
                     <TippedIcon size={75} iconId="django" />

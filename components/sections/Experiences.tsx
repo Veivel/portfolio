@@ -7,9 +7,29 @@ export default function Experiences() {
     return(
         <div className="grid md:grid-cols-2 gap-4">
             <WorkCard
+                title="Lead DevOps Engineer @ RISTEK"
+                period="Mar 2024 - Now"
+                technologies={["docker", "python", "linux"]}
+                imgSrc="/content/unilah.png"
+            >
+                <p>- Reduced operational costs by 40% through an organization-wide migration from AWS</p>
+                <p>- Maintained and succesfully migrated Susun Jadwal, a product with 10K+ total users, using a streamlined CI/CD pipeline utilizing GitHub Workflows and Docker.</p>
+                <br/>
+                <p>RISTEK is a student tech organization with an array of products and services targeted at students.</p>
+
+                {/* <LinksDiv>
+                    <Link href="https://example.com">
+                                Website <Ext />
+                    </Link>
+                    <Link href="https://example.com">
+                                Repository <Ext />
+                    </Link>
+                </LinksDiv> */}
+            </WorkCard>
+            <WorkCard
                 title="Software Engineer Intern @ UniLah"
                 period="June 2023 - Sep 2023"
-                technologies={["nestjs", "mongodb"]}
+                technologies={["nestjs", "mongodb",]}
                 imgSrc="/content/unilah.png"
             >
                 <p>Worked closely with another engineer to design a MongoDB database required to build the company{"'"}s API. I also collaborated with the team lead to implement email verification flows and bulk file imports on NestJS backend</p>
@@ -26,7 +46,7 @@ export default function Experiences() {
                 </LinksDiv> */}
             </WorkCard>
             <WorkCard
-                title="Frontend Engineer Intern @ Stealth"
+                title="Frontend Engineer Intern @ AdainAcara"
                 period="Dec 2022 - Mar 2023"
                 technologies={["nextjs", "tailwind"]}
                 imgSrc="/placeholder.jpeg"
