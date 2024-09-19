@@ -1,14 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Landing from '../modules/landing'
-import { useContext } from 'react'
-import { AppContext } from '../components/layout/context/AppProvider'
-import Hamburger from '../components/layout/Hamburger'
-import Drawer from '../components/layout/Drawer'
-import Footer from '../components/layout/Footer'
 import Script from 'next/script'
-import CustomNav from '../components/layout/CustomNav'
 
 const personSchema = {
     "@context": "https://schema.org/",
@@ -28,14 +21,6 @@ const personSchema = {
     },
 }
 
-const googleAnalyticsScript = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YBVSXDC89Z');
-`
-
 export default function Home() {
 
     return (
@@ -54,21 +39,22 @@ export default function Home() {
                 src="https://www.googletagmanager.com/gtag/js?id=G-YBVSXDC89Z"
                 strategy="afterInteractive"
             />
-            <Script id="google-analytics" strategy="afterInteractive">
-                {googleAnalyticsScript}
-            </Script>
 
             {/* Person Schema of Veivel for SEO */}
             <Script id="person-schema" type="application/ld+json">
                 {JSON.stringify(personSchema)}
             </Script>
 
-            <Hamburger />
-            <Drawer />
-            {/* <CustomNav /> */}
-            
-            <Landing />
-            <Footer />
+            <h1>hi there!</h1>
+            <p>i{"'"}m planning to rewrite this website soon.</p>
+
+            <p>in the meantime, may i interest you in any of the following links?</p>
+            <ul>
+                <li><Link href={"https://blog.veivelp.com"}>my blog</Link></li>
+                <li><Link href={"https://linkedin.com/in/veivel"}>my linkedin</Link></li>
+                <li><Link href={"https://github.com/Veivel"}>my github</Link></li>
+            </ul>
+            <p>you can contact me via linkedin! or, alternatively: <i>givarrel.veivel [at] ui.ac.id</i></p>
         </>
     )
 }
